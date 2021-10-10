@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ffffff;
+    color: #555;
+    font-family:charter, Cambria, "Times New Roman", Times, serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+
+}
+
+.Component-Header-flex-row {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;    /* added */
+    flex-direction: row;
+}
+
+header {
+    background: #05405e ;
+    background-blend-mode: screen;
+    background-size: cover;
+    background-position: center;
+    height: 3.8rem;
+    position:sticky;
+}   
+
+.Component-Header-main-nav{
+    list-style: none;
+    margin-top: 1.6rem;
+    position: relative;
+}
+
+.Component-Header-main-nav li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.Component-Header-main-nav li a:link,
+.Component-Header-main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    font-size: 100%;
+    text-transform: uppercase;
+}
+
+.Component-Header-main-nav li a:hover,
+.Component-Header-main-nav li a:active{
+    color: #caf0f8;
+    text-decoration: none;
+    transition:  color 0.3s;
+    border-bottom: 2px solid #caf0f8;
+    transition:  border-bottom 0.1s;
+    transform: scale(1.5);
+}
+
+.Component-Header-main-searchbar {
+    margin: 1.4rem 0;
+    display: flex;
+    justify-content: left;
+}
+
+@media only screen and (max-width: 360px) {
+    .Component-Header-main-nav li{
+        font-size: 1rem;
+    }
+}
+
+.HeaderLogo {
+    display: inline-block;
+    /* text-align: center; */
+    margin-left: 50%;
+        transform: translatX(-50%);
+        clear: both;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 700px) {
+    header {
+        height: auto;
+    }
+}
+
+.Component-Header-main-siteName{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.Component-Header-main-siteName h2 {
+        color: #fff;
+}

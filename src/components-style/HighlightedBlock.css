@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Component-HighlightedBlock-boxshadow {     
+    position: relative;
+    border-left: 4px solid rgb(19, 19, 19);
+    width: 64%;
+    min-height: 80%;
+    margin: 0 18% 2% 18%;
+    background-color: #ffffff;  
+    font-weight: 250;
+    line-height: 1.5;
+    font-family: charter, Cambria, "Times New Roman", Times, serif;
+    padding:0 1% 1% 1%;
+    color: rgb(19, 19, 19);
+    margin-top: 3%;
+}

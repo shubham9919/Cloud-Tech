@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Component-AricleImage-container{
+    position: relative;
+    margin: 2% 18% 1% 18%;
+    width: 64%;
+    display: inline-block;
+
+}
+
+.Component-AricleImage-Image{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+        /* background-image: cover; */
+}
+
+.Component-AricleImage-picCourtesy {
+    display:block;
+    text-align:center
+}

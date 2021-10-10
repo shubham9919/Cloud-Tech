@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Component-ArticleFooter-Auther{
+    font-weight: 200;
+    position: relative;
+    display: inline-block;
+    margin: 2% 18% 1% 18%;
+    width: 64%;
+    justify-content: center;
+
+}
+
+.Component-ArticleFooter-Auther:after{
+    content: "";
+    display: block;
+}
+
+.Component-ArticleFooter-Auther h4 {
+    font-weight: 200;
+    text-align: left;
+
+}
+
+.Component-ArticleFooter-Auther h3 {
+    font-weight: 400;
+    text-align: left;
+
+}

@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+.Component-ContactHandles-touchPoints {
+    width: 42vh;
+    height: auto;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.Component-ContactHandles-linkedIn {
+    
+        width: 100%;
+        height: 1rem;
+        background: rgb(250, 250, 250);
+        margin: 1rem 0;
+        flex: 1 1 auto;
+        margin: 10px;
+}
+

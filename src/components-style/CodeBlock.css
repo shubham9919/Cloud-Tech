@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+.Component-CodeBlock-main{
+    height:20rem;
+    width: 64%;
+    border:1px solid #ccc;
+    font:.9rem Georgia, Garamond, Serif;
+    overflow:auto;
+    display: flex;
+    margin:1rem auto;
+    text-align: center;
+    margin-top: 3%;
+}
+
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    text-align: left;
+    
+  }
+
+  pre{
+      display: flex;
+      justify-content: left;
+      text-align: left;
+  }

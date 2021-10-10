@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .Component-Paragraphtitle-heading {
+    display: block;
+} */
+
+.Component-Paragraphtitle-heading {
+    font-weight: 400;
+    font-size: 1.6em;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    margin: 3% 18% 0 18%;
+}

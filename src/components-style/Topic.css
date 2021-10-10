@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+ html {
+    background-color: #ffffff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    /* font-size: 20px; */
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+} 
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}   
+
+.component-topic-body{
+    height:16rem;
+    width: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.component-topic-card {
+    position: relative;
+    width: 50rem;
+    height: 12rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: #ff8c09;
+    cursor: pointer;
+}
+
+.component-topic-imgbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-50px);
+    z-index: 99;
+}
+
+img {
+    border-radius: 0.4rem;
+    width:100%;
+}
+
+.component-topic-content {
+    /* padding: -20px 20px; */
+    padding: -0.9rem 0.9rem;
+    text-align: center;
+    transform: translateY(-450px);
+    opacity: 0;
+}
+
+.component-topic-card:hover{
+    height: 15rem;
+    background-color: #dcf5fa;
+}
+.component-topic-card:hover > .component-topic-content{
+    opacity: 1;
+    /* transform:translateY(-100px);   */
+    transform:translateY(-6rem);
+    color: #05405e;
+}
+
+.component-topic-content p{
+    font-weight: bold;
+}
+
+.tempText {
+    padding: 1rem 1rem;
+    color: #fff;
+}
+
+.component-topic-card:hover  .tempText {
+    opacity: 0;
+}

@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .form-element {
+    display: table-cell;
+    box-sizing: border-box;
+  }
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: .1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    width: .1rem;
+}
+
+.textfield > input {
+    width:100%
+  }
+
+.form-element {
+    top: 3rem;
+    left: 5rem;
+}
+
+.SearchBar input {
+    height: .3rem;
+    width: .5rem;
+} */
+
+/* .navlist {
+    background-color: #0074D9;
+    position: absolute;
+    width: 100%;
+} */
+      
+/* styling navlist anchor element */
+
+  
+.navlist-right{
+    float:right;
+
+}
+
+/* hover effect of navlist anchor element */
+.navlist a:hover {
+    background-color: #ddd;
+    color: black;
+}
+      
+/* styling search bar */
+.search input[type=text]{
+    width: 9rem;;
+    height:1.5rem;
+    border-radius:25px;
+    border: none;
+}
+      
+.search{
+    float:right;
+    margin:0;
+    /* margin-top: 0rem; */
+}
+      
+.search button{
+    background-color: #05405e;
+    color: #f2f2f2;
+    float: right;
+    padding: 0.3rem 0.2rem;
+    /* margin-right: 16px; */
+    font-size: 0.8rem;
+    border: none;
+    cursor: pointer;
+} 
+
+
+/* @media only screen and (min-width: 700px) {
+    /* .search input[type=text]{
+        width: 8.5rem;;
+    } */
+
+
+
+/* @media only screen and (min-width: 200px) and (max-width: 700px) {
+    .search {
+        margin-top: -4.5rem;
+    }
+} */
+
+@media only screen and (max-width: 360px) {
+    .search input[type=text]{
+        width: 7rem;;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .search button {
+        padding: 0.3rem 0.057rem;
+
+    }
+}

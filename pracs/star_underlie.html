@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root{
+            --width: 100vw
+        }
+        .main_div{
+            width: var(--width);
+            height: 100vh;
+            padding: 100px;
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(42, 97, 218);
+            font-size: 5rem;
+        }
+
+        h1::after {
+            content: "\2b50";
+            width: 20vw;
+            height: 25px;
+            color: #1abc9c;
+            font-size: 3rem;
+            display: block;
+            margin: 0 auto;
+            border-bottom: 5px solid #1abc9c ;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="main_div">
+            <h1>Shubham Sheth</h1>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+
+        :root{
+            --b-a-width:10vw;
+            --b-a-md-width:15vw;
+            --b-a-sm-width:20vw;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main_div {
+            width: 100vw;
+            height: 100vh;
+            background: rgb(236, 236, 236);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        };
+
+        h1 {
+            text-align: center;
+            color: mediumseagreen;
+            position: relative;
+        }
+
+        h1::before {
+            /* display: block; */
+            content: "";
+            position: absolute;
+            top: 5%;
+            left:50%;
+            transform: translateX(-50%);
+            width: var(--b-a-width);
+            border-bottom: 5px solid #2c3e50;
+        }
+
+        h1::after {
+            /* display: block; */
+            content: "";
+            /* top: 5%;
+            left:50%;
+            translate: translateX(-50%); */
+            bottom: -10%;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            width: var(--b-a-width);
+            border-bottom: 5px solid #2c3e50;
+
+        }
+    </style>
+</head>
+<header></header>
+
+<body>
+    <div class="main_div">
+        <h1>Shubham Sheth</h1>
+    </div>
+</body>
+
+</html>

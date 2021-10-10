@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ffffff;
+    color: #555;
+    font-family: charter, Cambria, "Times New Roman", Times, serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.Component-ContentHeader-logo {
+    /* display: flex; */
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+    clear: both;     /* to handle float of header  */
+}
+
+
+.Component-ContentHeader-logo h3 {
+    font-weight: 400;
+}
+
+
+
