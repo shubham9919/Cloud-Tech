@@ -22,7 +22,7 @@ function Header() {
                                 <a href="/aboutUs">contact us</a>
                             </li>
                             <li>
-                                <a href="/">Home</a>
+                                <a href="/" className="Component-Header-main-nav-home">Home</a>
                             </li>
                         </ul>
 
