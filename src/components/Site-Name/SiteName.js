@@ -6,7 +6,7 @@ function SiteName() {
         <react.Fragment>
             <div className = "Component-site">            
                 {/* <img src="/logo/logo.png" className="Component-site-logo"/> */}
-                <h2>Cloud-Tech</h2>
+                <h2><u>Cloud Tech</u></h2>
             </div>
 
         </react.Fragment>

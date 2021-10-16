@@ -38,7 +38,7 @@ header {
 
 .Component-Header-main-nav li {
     display: inline-block;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
 
 .Component-Header-main-nav li a:link,
@@ -65,11 +65,11 @@ header {
     justify-content: left;
 }
 
-@media only screen and (max-width: 360px) {
-    .Component-Header-main-nav li{
-        font-size: 1rem;
-    }
+.Component-Header-main-siteName h2 {
+    color: #fff;
+    font-size: 1.4rem;
 }
+
 
 .HeaderLogo {
     display: inline-block;
@@ -83,7 +83,21 @@ header {
     header {
         height: auto;
     }
+    .Component-Header-main-siteName h2 {
+        font-size: 1.2rem;
+    }
 }
+
+@media only screen and (max-width: 380px) {
+    .Component-Header-main-nav li{
+        font-size: .7rem;
+    }
+    .Component-Header-main-siteName h2 {
+        font-size: 1rem;
+
+    }
+}
+
 
 .Component-Header-main-siteName{
     justify-content: center;
@@ -91,6 +105,6 @@ header {
     margin: auto;
 }
 
-.Component-Header-main-siteName h2 {
-        color: #fff;
-}
+
+
+
