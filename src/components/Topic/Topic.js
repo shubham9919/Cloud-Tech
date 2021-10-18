@@ -19,7 +19,7 @@ function Topic(Componentprops) {
                         <div className="component-topic-imgbox" >
                             <img src={Componentprops.Topic_Props.Image_source} alt={`${Componentprops.Topic_Props.Subject}-Image`}></img>
                             <div className="tempText">
-                                <h3>{Componentprops.Topic_Props.Topic_Hero_Text}</h3>
+                                <p>{Componentprops.Topic_Props.Topic_Hero_Text}</p>
                             </div>
                         </div>
                         <div className="component-topic-content">
