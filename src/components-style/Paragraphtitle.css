@@ -10,7 +10,7 @@
 
 .Component-Paragraphtitle-heading {
     font-weight: 400;
-    font-size: 1.6em;
+    font-size: 1.4rem;
     text-align: left;
     position: relative;
     display: inline-block;
@@ -20,7 +20,7 @@
 @media only screen and (max-width: 767px) {
 
     .Component-Paragraphtitle-heading {
-        margin: 3% 2% 0 2%;
+        margin: 3% 6% 0 6%;
       }
 }
 
