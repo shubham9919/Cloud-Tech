@@ -16,3 +16,12 @@
     display: inline-block;
     margin: 3% 18% 0 18%;
 }
+
+@media only screen and (max-width: 767px) {
+
+    .Component-Paragraphtitle-heading {
+        margin: 3% 2% 0 2%;
+      }
+}
+
+
