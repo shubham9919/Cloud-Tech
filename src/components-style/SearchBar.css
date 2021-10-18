@@ -54,7 +54,7 @@
       
 /* styling search bar */
 .search input[type=text]{
-    width: 9rem;;
+    width: 8rem;;
     height:1.5rem;
     border-radius:25px;
     border: none;
@@ -62,7 +62,7 @@
       
 .search{
     float:right;
-    margin:0;
+    margin:0 0 0 .7rem;
     /* margin-top: 0rem; */
 }
       

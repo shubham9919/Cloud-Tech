@@ -32,8 +32,10 @@ header {
 
 .Component-Header-main-nav{
     list-style: none;
-    margin-top: 1.6rem;
+    /* margin-top: 1.6rem; */
     position: relative;
+    margin:1.6rem .7rem 0 0;
+
 }
 
 .Component-Header-main-nav li {
