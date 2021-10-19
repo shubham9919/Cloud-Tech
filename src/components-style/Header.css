@@ -113,5 +113,23 @@ header {
 }
 
 
+@media only screen and (min-width: 0px) and (max-width: 370px) {
+    .Component-Header-main-siteName{
+        display: none;
+    }
+
+    .Component-Header-main-nav{
+        margin-left: 4rem;
+    }
+}
 
 
+@media only screen and (min-width: 371px) and (max-width: 500px) {
+    .Component-Header-main-siteName{
+        display: none;
+    }
+
+    .Component-Header-main-nav{
+        margin-left: 5rem;
+    }
+}
