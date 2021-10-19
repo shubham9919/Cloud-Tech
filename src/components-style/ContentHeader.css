@@ -22,7 +22,7 @@ html {
     /* display: flex; */
     text-align: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     clear: both;     /* to handle float of header  */
 }
 
@@ -33,7 +33,7 @@ html {
 
 @media only screen and (max-width: 767px) {
     .Component-ContentHeader-logo {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
   }
 
