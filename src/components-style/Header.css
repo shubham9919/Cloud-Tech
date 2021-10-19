@@ -103,6 +103,10 @@ header {
     .Component-Header-main-nav li {
         display:inline-block;
     }
+
+    .Component-Header-main-nav li {
+        margin: 0;
+    }
 }
 
 
@@ -131,5 +135,16 @@ header {
 
     .Component-Header-main-nav{
         margin-left: 5rem;
+    }
+}
+
+
+@media only screen and (min-width: 383px) and (max-width: 394px) {
+    .Component-Header-main-siteName{
+        display: none;
+    }
+
+    .Component-Header-main-nav{
+        margin-left: 4rem;
     }
 }
