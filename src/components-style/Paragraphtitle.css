@@ -9,14 +9,13 @@
 } */
 
 .Component-Paragraphtitle-heading {
-    font-weight: 400;
+    font-weight: 400 bold;
     font-size: 1.2rem;
     text-align: left;
     position: relative;
     display: inline-block;
     margin: 3% 18% 0 18%;
     font-style: oblique;
-    text-decoration: underline dashed;
 }
 
 @media only screen and (max-width: 767px) {

@@ -5,8 +5,8 @@ function ArticleCredits(params){
     return (
         <React.Fragment>
             <div className="Component-ArticleFooter-Auther">
-                <h3> <cite>Auther - {params.Auther}</cite></h3>
-                <h4>AWS Cloud Practitioner</h4>
+                <p> <cite>Auther - {params.Auther}</cite></p>
+                <p>AWS Solutions Architect.</p>
             </div>
         </React.Fragment>
     )

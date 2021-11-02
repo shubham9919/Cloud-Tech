@@ -5,10 +5,10 @@
 }
 
 .Component-ArticleFooter-Auther{
-    font-weight: 200;
+    font-weight: 200 bold;
     position: relative;
     display: inline-block;
-    margin: 2% 18% 1% 18%;
+    margin: 6% 18% 1% 18%;
     width: 64%;
     justify-content: center;
 

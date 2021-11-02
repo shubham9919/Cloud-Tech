@@ -1,13 +1,15 @@
 import React from "react";
-import '../../components-style/AricleImage.css'
+import Axios from 'axios';
+import { useState, useEffect } from "react";
+import '../../components-style/AricleImage.css';
 
 
 function AricleImage(params) {
     return (
         <React.Fragment>
             <div className="Component-AricleImage-container">
-            <div className="Component-AricleImage-Image">
-                <img src="/Arch-Diagrams/LAMBDA-S3.png" alt={params.logo || ""}></img>
+            <div className="Component-AricleImage-Image" id="articleImg">
+                <img src={params.articleImage} alt={params.articleImage || ""}></img>
             </div>
             <div className="Component-AricleImage-picCourtesy">
                {params.courtesy? <a href={params.courtesy || "" } style={{ textDecoration: "none" }} target="_blank" >Pic Courtesy:{params.courtesyDomain || ""}</a>: null}

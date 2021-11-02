@@ -28,7 +28,7 @@ html {
 
 
 .Component-ContentHeader-logo h3 {
-    font-weight: 400;
+    font-weight: 400 bold;
 }
 
 @media only screen and (max-width: 767px) {

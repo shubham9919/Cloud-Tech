@@ -23,3 +23,10 @@
     display:block;
     text-align:center
 }
+
+@media only screen and (max-width: 768px) {
+    #articleImg img {
+        border-radius: 0.4rem;
+        width:120%;
+    }
+  }

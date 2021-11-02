@@ -58,14 +58,12 @@ function BlogContent(componentProps) {
             else if(LowKey.includes("content_hero")) {
                 ComponentArray.push(<HeroImageForArticle key={key} image={componentInputs[componentKeys[key]]} courtesy={componentInputs.Hero_Pic_Courtesy} courtesyDomain={componentInputs.hero_pic_courtesy_domain} logo={componentInputs.logo}></HeroImageForArticle>)
             }
-            else if(LowKey ==="codeblock"){
-                ComponentArray.push(<AricleImage key={key} articleImage={componentInputs[componentKeys[key]]}></AricleImage>)
-
+            else if(LowKey.includes("codeblock")){
                 ComponentArray.push(<CodeBlock key={key} codeblock={componentInputs[componentKeys[key]]}></CodeBlock>)
              } 
-            //else if(LowKey === "aricle_image") {
-            //     ComponentArray.push(<AricleImage key={key} articleImage={componentInputs[componentKeys[key]]}></AricleImage>)
-            // }
+            else if(LowKey.includes("aricle_image")) {
+                ComponentArray.push(<AricleImage key={key} articleImage={componentInputs[componentKeys[key]]}></AricleImage>)
+            }
         }
 
         return (
