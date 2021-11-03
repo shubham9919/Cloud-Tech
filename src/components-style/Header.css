@@ -80,12 +80,24 @@ header {
         clear: both;
 }
 
+header {
+    height: auto;
+    font-size: 0.9rem;
+}
+
 @media only screen and (min-width: 200px) and (max-width: 700px) {
     header {
         height: auto;
+        font-size: 0.9rem;
     }
     .Component-Header-main-siteName h2 {
         font-size: 1.2rem;
+    }
+    .Component-Header-main-searchbar {
+        margin:  0.2rem 0;
+    }
+    .Component-Header-main-nav{
+        margin: 0.2rem 0.7rem 0 0;
     }
 }
 
