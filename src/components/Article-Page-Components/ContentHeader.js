@@ -12,6 +12,8 @@ function ContentHeader(properties) {
                     {/* <Logo logo={properties.logo}></Logo> */}
                     <h3>{properties.title}</h3>
                 </div>  
+                <div className = "Component-ContentHeader-logo-line"></div>
+
         </React.Fragment>
     );
 }
