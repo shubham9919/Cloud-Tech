@@ -51,6 +51,8 @@ html {
         margin-bottom: 5%;
         border-bottom: 1px solid black; 
     }
+    li { list-style-type:none;}
+
   }
 
 
