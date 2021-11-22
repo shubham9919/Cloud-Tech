@@ -10,7 +10,7 @@ function Footer() {
                     <a className="a-tags" href="/"><li>Home</li></a>
                 </div>
                 <div className="copyright-text">
-                    <p>copyright &copy; 2021 by Cloud-Tech.All Rights Reserved.
+                    <p>copyright &copy; 2021 by Cloud-Tech. All Rights Reserved.
                     </p>
                 </div>
             </footer>

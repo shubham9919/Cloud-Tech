@@ -62,11 +62,33 @@
         border: 1px solid #05405e;
     }
 
-    @media only screen and (min-width: 200px) and (max-width: 700px) {
+
+
+    @media only screen and (min-width: 400px) and (max-width: 700px) {
         .search-field {
             width: 10rem; 
             height: 2.2rem;
             border-radius: 2rem;
+            margin-top: 4.5rem;
+        }
+
+        input {
+            margin-bottom: .3rem;
+        }
+
+        .search button{ 
+            font-size: .7rem;
+        }
+    }
+
+
+    @media only screen and (min-width: 200px) and (max-width: 400px) {
+        .search-field {
+            width: 10rem; 
+            height: 2.2rem;
+            border-radius: 2rem;
+            margin-top: 1.5rem;
+
         }
 
         input {
