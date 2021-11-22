@@ -23,10 +23,19 @@ footer {
 
 .onpage-link-outs li{
     list-style: none;
-    padding: 1rem;
+    margin: 1rem;
 }
 
 a {
     text-decoration: none;
     color: rgb(104, 104, 104);
+}
+
+@media only screen and (min-width: 200px) and (max-width: 700px) {
+    .onpage-link-outs li{
+        margin: 1rem 0 2rem 1rem
+        }
+        .copyright-text{
+            font-size: .9rem;
+        }
 }

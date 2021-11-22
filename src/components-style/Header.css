@@ -48,6 +48,7 @@ ul li{
     background-image:url(/src/img/Hero-Cover-Image.png);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
     }
 
     .intro-text {
@@ -107,4 +108,5 @@ ul li{
         ul li{
             font-size: 1rem;
         }
+ 
     }
