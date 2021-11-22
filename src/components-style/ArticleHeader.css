@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.article-header-element a{
+    text-decoration: none;
+}
+
+.article-header-element li {
+    margin: 1rem;
+    list-style: none;
+    color: rgb(104, 104, 104);
+    transform: none;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 700px) {
+    .article-header-element {
+        display: none;
+    }
+}

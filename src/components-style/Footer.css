@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    margin-top: 1rem;
+    background-color:rgb(48, 48, 48);
+}
+
+.copyright-text{
+    color: rgb(104, 104, 104);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+
+.onpage-link-outs{
+    display: flex;
+    padding-top: 1.5rem;
+}
+
+.onpage-link-outs li{
+    list-style: none;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(104, 104, 104);
+}

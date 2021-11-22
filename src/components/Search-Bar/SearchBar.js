@@ -6,22 +6,12 @@ import "../../components-style/SearchBar.css"
 function SearchBar() {
     return (
         <React.Fragment>
-            <head>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-            </head>
-            <div className="navlist">
-                <div className="search">
-                    <form action="/search">
-                        <input type="text"
-                            placeholder=" Search Topic"
-                            name="articleName" />
-                        <button>
-                            <i className="fa fa-search"
-                                style={{ fontSize: "18px" }}>
-                            </i>
-                        </button>
-                    </form>
-                </div>
+            <div className="search-topic">
+                <form action="/search">
+                    <label for="fname" class="search-field"></label> 
+                    <input type="text" id="fname" name="articleName" className="search-field" placeholder="Read About"></input>
+                    <button className="btn clrbtn bor">Start reading!</button>
+                </form>
             </div>
         </React.Fragment>
     )
