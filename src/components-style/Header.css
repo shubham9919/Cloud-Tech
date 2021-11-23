@@ -100,7 +100,7 @@ ul li{
             line-height:normal;
         }
 
-        cite {
+        .intro-text cite {
             font-size: .8rem;
         }
         ul li{

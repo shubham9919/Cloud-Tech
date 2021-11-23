@@ -34,5 +34,6 @@ pre code {
   @media only screen and (max-width: 767px) {
     .Component-CodeBlock-main {
         width: 82%;
+        margin-bottom: 3rem;
     }
   }

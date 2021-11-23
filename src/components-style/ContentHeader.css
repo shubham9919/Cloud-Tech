@@ -34,6 +34,7 @@ html {
 @media only screen and (max-width: 767px) {
     .Component-ContentHeader-logo {
         font-size: 1.3rem;
+        margin-top: 2rem;
     }
     .Component-ContentHeader-logo h3 {
         font-size: 1.2rem;
@@ -51,7 +52,7 @@ html {
         margin-bottom: 5%;
         border-bottom: 1px solid black; 
     }
-    li { list-style-type:none;}
+    /* li { list-style-type:none;} */
 
   }
 
