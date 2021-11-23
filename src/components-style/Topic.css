@@ -32,7 +32,7 @@
     width: 50rem;
     height: 12rem;
     border-radius: 0.5rem;
-    box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.2rem 0.9rem rgba(228, 228, 228, 0.5);
     transition: 0.3s;
     padding: 1rem 1rem 1rem 1rem;
     background-color: #ff8c09;
@@ -82,4 +82,10 @@ img {
 
 .component-topic-card:hover  .tempText {
     opacity: 0;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 700px) {
+    .component-topic-card {
+        width: 25rem;
+    }
 }

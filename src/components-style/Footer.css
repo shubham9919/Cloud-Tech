@@ -5,20 +5,18 @@
 }
 
 footer {
-    margin-top: 1rem;
+    margin-top: 3rem;
     background-color:rgb(48, 48, 48);
 }
 
 .copyright-text{
     color: rgb(104, 104, 104);
     text-align: center;
-    padding-bottom: 1rem;
 }
 
 
 .onpage-link-outs{
     display: flex;
-    padding-top: 1.5rem;
 }
 
 .onpage-link-outs li{
@@ -36,6 +34,6 @@ a {
         margin: 1rem 0 2rem 1rem
         }
         .copyright-text{
-            font-size: .9rem;
+            font-size: .7rem;
         }
 }
