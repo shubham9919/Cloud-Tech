@@ -10,32 +10,32 @@ function AboutUs() {
 
     const [isTextChanged, setIsTextChanged] = useState(null);
 
-    let LoadDiv = ()=> {
+    let LoadDiv = () => {
         setIsTextChanged("bye")
     }
 
 
     return (
         <React.Fragment>
-            <div className="Component-AboutUs-main">    
-            <div className="Component-AboutUs-header">
-                <h2><span class="tapered2">About Me</span></h2>
-            </div>
-            <div className="Component-AboutUs-flex-container">
-                <div className="Component-AboutUs-pic">
-                <div className ="Component-AboutUs-pseudo"></div>
-                <img src="/logo/Shubham-Pic.JPG" alt="Lou" />
+            <div className="Component-AboutUs-main">
+                <div className="Component-AboutUs-header">
+                    <h2><span class="tapered2">About Me</span></h2>
                 </div>
-                <div className="Component-AboutUs-ContactInfo">
-                    <h4>Hi There!</h4>
-                    <p>I am Shubham, A software developer and cloud enthusiast. I started working on this website to get my hands dirty with React JS and Router. I write about my experience and my own implementation experiments on various cloud services. Feel free to advice and connect with me on below details.</p>
-                </div>
+                <div className="Component-AboutUs-flex-container">
+                    <div className="Component-AboutUs-pic">
+                        <div className="Component-AboutUs-pseudo"></div>
+                        <img src="/logo/Shubham-Pic.JPG" alt="Lou" />
+                    </div>
+                    <div className="Component-AboutUs-ContactInfo">
+                        <h4>Hi There!</h4>
+                        <p>I am Shubham, A software developer and cloud enthusiast. I started working on this website to get my hands dirty with React JS and Router. I write about my experience and my own implementation experiments on various cloud services. Feel free to advice and connect with me on below details.</p>
+                    </div>
 
 
-            </div>
-            <div className="Component-AboutUs-ContactInfo-contacts">
-                <button className="Component-AboutUs-ContactInfo-button" onClick={LoadDiv}>Contact Infomation</button>
-                {isTextChanged ==="bye"? <ContactHandles></ContactHandles>: null}
+                </div>
+                <div className="Component-AboutUs-ContactInfo-contacts">
+                    <button className="Component-AboutUs-ContactInfo-button" onClick={LoadDiv}>Contact Infomation</button>
+                    {isTextChanged === "bye" ? <ContactHandles></ContactHandles> : null}
                 </div>
 
             </div>

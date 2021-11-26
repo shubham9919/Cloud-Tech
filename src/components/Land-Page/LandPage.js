@@ -4,7 +4,7 @@ import Topic from '../Topic/Topic'
 import '../../components-style/Topic.css'
 import '../../components-style/LandPage.css'
 import Header from '../Header/Header'
-import {useEffect, useState} from 'react'
+import { useEffect, useState } from 'react'
 import Axios from 'axios'
 
 
@@ -16,13 +16,13 @@ import Axios from 'axios'
  * @return {*} 
  */
 function LandPage(params) {
-    const state =  useState()
+    const state = useState()
     const [pageData, updatedData] = useState(null)
     useEffect(() => {
         Axios.get(`https://of8wybu5c3.execute-api.ap-south-1.amazonaws.com/dev/cloud-tech-fetch?topic=Home-Page-Content`).then((response) => {
-             console.log(response)
-             updatedData(response)
-         })
+            console.log(response)
+            updatedData(response)
+        })
     }, [])
 
     // console.log("params in LandPage ---> " + JSON.stringify(params))
@@ -55,7 +55,7 @@ function LandPage(params) {
             <React.Fragment>
                 <div className="LandPage">
                     <div className="flexbox-container">
-                        {!pageData?<h1>Loading</h1>:pageData.data.map(item => <Topic key={item} Topic_Props={item} />)}
+                        {!pageData ? <h1>Loading</h1> : pageData.data.map(item => <Topic key={item} Topic_Props={item} />)}
                     </div>
                 </div>
             </React.Fragment>

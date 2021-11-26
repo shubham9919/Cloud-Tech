@@ -13,7 +13,7 @@ function HighlightedBlock(params) {
         <React.Fragment>
             <div className="Component-HighlightedBlock-boxshadow">
                 <Paragraphtitle paraTitle={params.paraHeader} isHighlighted={true}></Paragraphtitle>
-                <div className="Component-Article-Paragraphs"  dangerouslySetInnerHTML={iframe()}>
+                <div className="Component-Article-Paragraphs" dangerouslySetInnerHTML={iframe()}>
                 </div>
             </div>
         </React.Fragment>

@@ -17,7 +17,7 @@ function ArticleParagraph(params) {
         }
     }
 
-    if(params.isHtml){
+    if (params.isHtml) {
         return (
             <div dangerouslySetInnerHTML={directPage()}>
 
@@ -28,7 +28,7 @@ function ArticleParagraph(params) {
             <React.Fragment>
                 <div className="Component-Article-workspace">
                     {/* <Paragraphtitle paraTitle={params.paraHeader}></Paragraphtitle> */}
-                    <div className="Component-Article-Paragraphs"  dangerouslySetInnerHTML={iframe()}>
+                    <div className="Component-Article-Paragraphs" dangerouslySetInnerHTML={iframe()}>
                     </div>
                 </div>
             </React.Fragment>

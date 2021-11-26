@@ -5,15 +5,15 @@ import Blog from '../Blogs/Blog'
 
 
 function Topic(Componentprops) {
-     
+
     //  console.log(JSON.stringify(Componentprops))
 
     const callCloudfetchApi = (e) => {
-         console.log("Clicked"); 
+        console.log("Clicked");
     }
     return (
         <React.Fragment>
-         <a href={`/${Componentprops.Topic_Props.Route}`} onClick={callCloudfetchApi} style={{ textDecoration: "none" }}>
+            <a href={`/${Componentprops.Topic_Props.Route}`} onClick={callCloudfetchApi} style={{ textDecoration: "none" }}>
                 <body className="component-topic-body">
                     <div className="component-topic-card">
                         <div className="component-topic-imgbox" >

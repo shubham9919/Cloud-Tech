@@ -4,7 +4,7 @@ import react from "react";
 function SiteName() {
     return (
         <react.Fragment>
-            <div className = "Component-site">            
+            <div className="Component-site">
                 {/* <img src="/logo/logo.png" className="Component-site-logo"/> */}
                 <h2><u>Cloud Tech</u></h2>
             </div>

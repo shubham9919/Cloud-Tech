@@ -1,9 +1,9 @@
 import React from "react";
 
 function HeaderLogo(params) {
-    return(
+    return (
         <React.Fragment>
-            <h2 style={{marginTop: "1rem"}}>Cloud-Tech</h2>
+            <h2 style={{ marginTop: "1rem" }}>Cloud-Tech</h2>
         </React.Fragment>
     )
 }
