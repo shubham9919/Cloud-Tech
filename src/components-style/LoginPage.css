@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* .LoginPage {
+    background-image:url(/src/img/Hero-Cover-Image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+} */
+.LoginPage-model {
+    background-image:url(/src/img/Hero-Cover-Image.png);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+
+.LoginPage-img{
+    margin: 2rem 0;
+    width: 90%;
+    margin:10% 10% 10% 5%;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.LoginPage-model-header {
+    padding: 10px, 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 10px 15px; 
+}
+
+
+.LoginPage-model-header .LoginPage-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.LoginPage-model-header .LoginPage-close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 10px 15px; 
+
+}
+
+.LoginPage-model-body {
+    padding: 10px 15px; 
+}
+
+/* #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(243, 243, 243);
+    pointer-events: none;
+}
+
+#overlay.active {
+    pointer-events: all;
+    opacity: 0.7;
+    
+} */
+
+/* 
+.LoginPage-model.active{
+    transform: translate(-50%, -50%) scale(1);
+} */
+
+

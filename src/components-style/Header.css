@@ -28,6 +28,10 @@ ul li{
     background: #e76d09;
 }
 
+.blclrbtn{
+    background: rgb(52, 52, 253);
+}
+
 .btn {
     display: inline-block;
     padding: 10px;

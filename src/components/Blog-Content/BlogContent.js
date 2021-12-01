@@ -11,6 +11,7 @@ import CodeBlock from "../Article-Page-Components/CodeBlock";
 import Paragraphtitle from "../Article-Page-Components/ParagraphTitle";
 import ArticleHeader from "../Article-Page-Components/ArticleHeader";
 import Footer from "../Footer/Footer";
+import { Redirect } from "react-router";
 
 /**
  * @todo PASS HIGHLIGHTED TEXT IN THE HIGHLIGHTED COMPONENT
@@ -33,40 +34,46 @@ function BlogContent(componentProps) {
             </React.Fragment>
         )
     } else {
-        console.log("componentInputs --->" + JSON.stringify(componentInputs))
+        // console.log("componentInputs --->" + JSON.stringify(componentInputs))
         const componentKeys = Object.keys(componentInputs)
-        console.log("componentKeys -->" + componentKeys)
+        // console.log("componentKeys -->" + componentKeys)
         let ComponentArray = []
         let flag = true
-        for (const key in componentKeys) {
-            console.log("key --> " + componentKeys[key])
-            let LowKey = componentKeys[key].toLowerCase()
-            console.log("LowKey -->" + LowKey)
-            if (LowKey.includes("highlighted_para_content") && flag) {
-                flag = false
-                ComponentArray.push(<HighlightedBlock key={key} paraHeader={componentInputs[componentKeys[componentKeys.findIndex(element => element.toLowerCase().includes("highlighted_para_header"))]]} paraContent={componentInputs[componentKeys[key]]} ></HighlightedBlock>)
+        console.log(localStorage.getItem('userToken'))
+        console.log(componentKeys.isPremium)
+        if(!componentInputs.isPremium || (componentInputs.isPremium && localStorage.getItem('userToken'))){
+            for (const key in componentKeys) {
+                // console.log("key --> " + componentKeys[key])
+                let LowKey = componentKeys[key].toLowerCase()
+                // console.log("LowKey -->" + LowKey)
+                if (LowKey.includes("highlighted_para_content") && flag) {
+                    flag = false
+                    ComponentArray.push(<HighlightedBlock key={key} paraHeader={componentInputs[componentKeys[componentKeys.findIndex(element => element.toLowerCase().includes("highlighted_para_header"))]]} paraContent={componentInputs[componentKeys[key]]} ></HighlightedBlock>)
+                }
+                else if (LowKey.includes("para_header") && !LowKey.includes("highlighted")) {
+                    ComponentArray.push(<Paragraphtitle key={key} paraTitle={componentInputs[componentKeys[key]]}></Paragraphtitle>)
+                }
+                else if (LowKey.includes("para_content") && !LowKey.includes("highlighted")) {
+                    ComponentArray.push(<ArticleParagraph key={key} paraContent={componentInputs[componentKeys[key]]}></ArticleParagraph>)
+                }
+                else if (LowKey.includes("auther")) {
+                    ComponentArray.push(<ArticleCredits key={key} Auther={componentInputs[componentKeys[key]]}></ArticleCredits>)
+                }
+                else if (LowKey.includes("title")) {
+                    ComponentArray.push(<ContentHeader key={key} title={componentInputs[componentKeys[key]]}></ContentHeader>)
+                }
+                else if (LowKey.includes("content_hero")) {
+                    ComponentArray.push(<HeroImageForArticle key={key} image={componentInputs[componentKeys[key]]} courtesy={componentInputs.Hero_Pic_Courtesy} courtesyDomain={componentInputs.hero_pic_courtesy_domain} logo={componentInputs.logo}></HeroImageForArticle>)
+                }
+                else if (LowKey.includes("codeblock")) {
+                    ComponentArray.push(<CodeBlock key={key} codeblock={componentInputs[componentKeys[key]]}></CodeBlock>)
+                }
+                else if (LowKey.includes("aricle_image")) {
+                    ComponentArray.push(<AricleImage key={key} articleImage={componentInputs[componentKeys[key]]}></AricleImage>)
+                }
             }
-            else if (LowKey.includes("para_header") && !LowKey.includes("highlighted")) {
-                ComponentArray.push(<Paragraphtitle key={key} paraTitle={componentInputs[componentKeys[key]]}></Paragraphtitle>)
-            }
-            else if (LowKey.includes("para_content") && !LowKey.includes("highlighted")) {
-                ComponentArray.push(<ArticleParagraph key={key} paraContent={componentInputs[componentKeys[key]]}></ArticleParagraph>)
-            }
-            else if (LowKey.includes("auther")) {
-                ComponentArray.push(<ArticleCredits key={key} Auther={componentInputs[componentKeys[key]]}></ArticleCredits>)
-            }
-            else if (LowKey.includes("title")) {
-                ComponentArray.push(<ContentHeader key={key} title={componentInputs[componentKeys[key]]}></ContentHeader>)
-            }
-            else if (LowKey.includes("content_hero")) {
-                ComponentArray.push(<HeroImageForArticle key={key} image={componentInputs[componentKeys[key]]} courtesy={componentInputs.Hero_Pic_Courtesy} courtesyDomain={componentInputs.hero_pic_courtesy_domain} logo={componentInputs.logo}></HeroImageForArticle>)
-            }
-            else if (LowKey.includes("codeblock")) {
-                ComponentArray.push(<CodeBlock key={key} codeblock={componentInputs[componentKeys[key]]}></CodeBlock>)
-            }
-            else if (LowKey.includes("aricle_image")) {
-                ComponentArray.push(<AricleImage key={key} articleImage={componentInputs[componentKeys[key]]}></AricleImage>)
-            }
+        } else {
+            return <Redirect to="/login"></Redirect>
         }
 
         return (

@@ -1,22 +1,38 @@
 import React from 'react'
-import { useCallback, useState } from 'react';
+import { useCallback, useState, useEffect } from 'react';
 import '../../components-style/AboutUs.css';
 import '../../components-style/Grid.css'
 import '../../components-style/normalize.css'
 import ContactHandles from '../About-Us/ContactHandles'
+import axios from 'axios';
+import  { Redirect } from 'react-router-dom'
+
 
 
 function AboutUs() {
 
     const [isTextChanged, setIsTextChanged] = useState(null);
+    const [user, setUser] = useState(null)
 
     let LoadDiv = () => {
         setIsTextChanged("bye")
     }
 
+//     useEffect(() => {
+//         axios({
+//          method: "GET",
+//          withCredentials: true,
+//          url: "http://localhost:5000/protected"
+//      }).then((res) => {
+//          console.log(res)
+//          setUser(res)
+//          localStorage.setItem('userToken', res)
+//      })  
+//  }, [])
 
     return (
         <React.Fragment>
+            
             <div className="Component-AboutUs-main">
                 <div className="Component-AboutUs-header">
                     <h2><span class="tapered2">About Me</span></h2>
@@ -39,11 +55,11 @@ function AboutUs() {
                 </div>
 
             </div>
-
-
         </React.Fragment>
     );
 }
+
+////<h2>Not Auth</h2>
 
 export default AboutUs
 

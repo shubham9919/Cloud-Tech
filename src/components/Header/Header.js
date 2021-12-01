@@ -18,6 +18,7 @@ function Header() {
                     <ul>
                         <a href="/"><li className="btn clrbtn" >Home</li></a>
                         <a href="/aboutus"><li className="btn" >About Me</li></a>
+                        <a href="/login"><li className="btn" >Sign In</li></a>
                     </ul>
                 </div>
 
