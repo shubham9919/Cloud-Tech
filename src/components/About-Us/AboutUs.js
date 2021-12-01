@@ -1,18 +1,17 @@
 import React from 'react'
-import { useCallback, useState, useEffect } from 'react';
+import { useState } from 'react';
 import '../../components-style/AboutUs.css';
 import '../../components-style/Grid.css'
 import '../../components-style/normalize.css'
 import ContactHandles from '../About-Us/ContactHandles'
-import axios from 'axios';
-import  { Redirect } from 'react-router-dom'
+
 
 
 
 function AboutUs() {
 
     const [isTextChanged, setIsTextChanged] = useState(null);
-    const [user, setUser] = useState(null)
+    // const [user, setUser] = useState(null)
 
     let LoadDiv = () => {
         setIsTextChanged("bye")

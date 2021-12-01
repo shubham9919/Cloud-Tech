@@ -4,7 +4,6 @@ import ArticleHeader from "../Article-Page-Components/ArticleHeader";
 require('dotenv').config();
 
 const setLogin = () => {
-    console.log(process.env.OAUTH_URL)
     window.open(process.env.REACT_APP_OAUTH_URL,"_self")
     // axios.get(`http://localhost:5000/login`).then((response) => {
     //     console.log(response)

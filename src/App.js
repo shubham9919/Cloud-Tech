@@ -12,6 +12,8 @@ import Blog from './components/Blogs/Blog';
 import LoadSearchResultMatch from './components/Search-Bar/LoadSearchResultMatch';
 import LoginPage from './components/Login/LoginPage';
 import axios from 'axios';
+require('dotenv').config();
+
 
 
 
@@ -24,9 +26,9 @@ function App() {
     axios({
       method: "GET",
       withCredentials: true,
-      url: "http://localhost:5000/protected"
+      url: process.env.REACT_APP_IS_LOGGEDIN
     }).then((res) => {
-      console.log(res)
+      // console.log(res)
       setUser(res)
       localStorage.setItem('userToken', res)
     })
