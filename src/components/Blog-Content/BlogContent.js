@@ -39,9 +39,9 @@ function BlogContent(componentProps) {
         // console.log("componentKeys -->" + componentKeys)
         let ComponentArray = []
         let flag = true
-        console.log(localStorage.getItem('userToken'))
-        console.log(componentKeys.isPremium)
-        if(!componentInputs.isPremium || (componentInputs.isPremium && localStorage.getItem('userToken'))){
+        // console.log(localStorage.getItem('userToken'))
+        console.log(componentInputs.isPremium)
+        if(!componentInputs.isPremium || (componentInputs.isPremium && localStorage.getItem('userToken') && Object.keys(localStorage.getItem('userToken').length > 0))){
             for (const key in componentKeys) {
                 // console.log("key --> " + componentKeys[key])
                 let LowKey = componentKeys[key].toLowerCase()

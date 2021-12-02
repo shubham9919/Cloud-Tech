@@ -27,12 +27,13 @@ function App() {
       method: "GET",
       withCredentials: true,
       url: process.env.REACT_APP_IS_LOGGEDIN
+      // url: "http://localhost:5000/"
     }).then((res) => {
       // console.log(res)
       setUser(res)
       localStorage.setItem('userToken', res)
     })
-  }, [])
+  })
   return (
     <Switch>
       <Route exact path="/login" component={LoginPage} />
