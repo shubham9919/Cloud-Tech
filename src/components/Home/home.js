@@ -17,7 +17,7 @@ function Home(props) {
       }).then((res) => {
         console.log(`--------------${JSON.stringify(res)}------------------`)
         setUser(res)
-        localStorage.setItem('userToken', res)
+        sessionStorage.setItem('userToken', res)
       })
     }, [])
     return (

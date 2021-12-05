@@ -1,6 +1,5 @@
 import React from "react";
 import '../../components-style/LoginPage.css'
-import axios from "axios";  
 import ArticleHeader from "../Article-Page-Components/ArticleHeader";
 require('dotenv').config();
 
