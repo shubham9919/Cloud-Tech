@@ -1,20 +1,17 @@
 import React from "react";
 import '../../components-style/LoginPage.css'
+import axios from "axios";  
 import ArticleHeader from "../Article-Page-Components/ArticleHeader";
 require('dotenv').config();
 
 const setLogin = () => {
     window.open(process.env.REACT_APP_OAUTH_URL,"_self")
-    // axios.get(`http://localhost:5000/login`).then((response) => {
+    // axios.get(`http://localhost:5000/auth/google`).then((response) => {
     //     console.log(response)
     // })
 }
 
 function LoginPage() {
-
-    // const [login, setLogin] = useState(null)
-
-
     return (
         <React.Fragment>
                 <body>

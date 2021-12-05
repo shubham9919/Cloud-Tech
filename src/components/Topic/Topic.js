@@ -13,7 +13,7 @@ function Topic(Componentprops) {
     }
     return (
         <React.Fragment>
-            <a href={`/${Componentprops.Topic_Props.Route}`} onClick={callCloudfetchApi} style={{ textDecoration: "none" }}>
+            <a href={`/article/${Componentprops.Topic_Props.Route}`} onClick={callCloudfetchApi} style={{ textDecoration: "none" }}>
                 <body className="component-topic-body">
                     <div className="component-topic-card">
                         <div className="component-topic-imgbox" >

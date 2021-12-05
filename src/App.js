@@ -13,34 +13,18 @@ import LoadSearchResultMatch from './components/Search-Bar/LoadSearchResultMatch
 import LoginPage from './components/Login/LoginPage';
 import axios from 'axios';
 require('dotenv').config();
-
-
-
-
 //https://stackoverflow.com/questions/40714583/how-to-specify-a-port-to-run-a-create-react-app-based-project/48669909#48669909
 
 function App() {
-  const [user, setUser] = useState(null)
 
-  useEffect(() => {
-    axios({
-      method: "GET",
-      withCredentials: true,
-      url: process.env.REACT_APP_IS_LOGGEDIN
-      // url: "http://localhost:5000/"
-    }).then((res) => {
-      // console.log(res)
-      setUser(res)
-      localStorage.setItem('userToken', res)
-    })
-  })
   return (
     <Switch>
       <Route exact path="/login" component={LoginPage} />
       <Route exact path="/search" component={LoadSearchResultMatch} />
+      <Route exact path="/user/:oauthid" component={Home} />
       <Route exact path="/" component={Home} />
       <Route exact path="/aboutus" component={AboutUs} />
-      <Route exact path="/:topic" component={Blog} />
+      <Route exact path="/article/:topic" component={Blog} />
     </Switch>
   );
 }
