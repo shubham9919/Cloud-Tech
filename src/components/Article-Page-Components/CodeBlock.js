@@ -1,20 +1,23 @@
 import React from "react";
 import '../../components-style/CodeBlock.css'
 
-function CodeBlock(params) {
+function CodeBlock(properties) {
     const base64Decoder = () => {
-        return Buffer.from(params.codeblock, "base64").toString("utf8")
+        return Buffer.from(properties.codeBlock, "base64").toString("utf8")
     }
     // console.log(base64Decoder())
     // let text = base64Decoder()
     // console.log("params--->" + JSON.stringify(params))
     return (
         <React.Fragment>
-            <div className="Component-CodeBlock-main">
-                <pre>
+            <body className="codeblock_component_body">
+                <div className="Component-CodeBlock-main">
+                    <pre>
                     {base64Decoder()}
-                </pre>
-            </div>
+                    </pre>
+                </div>
+            </body>
+
         </React.Fragment>
     )
 }

@@ -3,57 +3,123 @@ import { useState } from 'react';
 import '../../components-style/AboutUs.css';
 import '../../components-style/Grid.css'
 import '../../components-style/normalize.css'
-import ContactHandles from '../About-Us/ContactHandles'
-
+import HamburgerHeader from '../Hamburger-Header/HamburgerHeader.js'
+import Header from '../Header/Header.js'
+import Footer from '../Footer/Footer.js'
 
 
 
 function AboutUs() {
 
-    const [isTextChanged, setIsTextChanged] = useState(null);
-    // const [user, setUser] = useState(null)
-
-    let LoadDiv = () => {
-        setIsTextChanged("bye")
-    }
-
-//     useEffect(() => {
-//         axios({
-//          method: "GET",
-//          withCredentials: true,
-//          url: "http://localhost:5000/protected"
-//      }).then((res) => {
-//          console.log(res)
-//          setUser(res)
-//          localStorage.setItem('userToken', res)
-//      })  
-//  }, [])
-
     return (
         <React.Fragment>
-            
-            <div className="Component-AboutUs-main">
-                <div className="Component-AboutUs-header">
-                    <h2><span class="tapered2">About Me</span></h2>
-                </div>
-                <div className="Component-AboutUs-flex-container">
-                    <div className="Component-AboutUs-pic">
-                        <div className="Component-AboutUs-pseudo"></div>
-                        <img src="/logo/Shubham-Pic.JPG" alt="Lou" />
-                    </div>
-                    <div className="Component-AboutUs-ContactInfo">
-                        <h4>Hi There!</h4>
-                        <p>I am Shubham, A software developer and cloud enthusiast. I started working on this website to get my hands dirty with React JS and Router. I write about my experience and my own implementation experiments on various cloud services. Feel free to advice and connect with me on below details.</p>
-                    </div>
+            <head>
+    <meta charset='utf-8'/>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'/>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'/>    
 
-
-                </div>
-                <div className="Component-AboutUs-ContactInfo-contacts">
-                    <button className="Component-AboutUs-ContactInfo-button" onClick={LoadDiv}>Contact Infomation</button>
-                    {isTextChanged === "bye" ? <ContactHandles></ContactHandles> : null}
-                </div>
-
-            </div>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@400;500&family=Rubik:wght@400;700&display=swap"
+        rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"/>
+            {/* </link> */}
+</head>
+        <body>
+            <Header></Header>
+            <HamburgerHeader></HamburgerHeader>
+    <div className="about_me_starter">
+        <div className="my_image">
+            <img src="/shubham_pic.JPG" alt='shubham_pic.JPG'/>
+        </div>
+        <div className="my_name">
+            <h3>Hello, I am Shubham Chavan. I am a cloud enthusiast trying my hands on various technologies and cloud
+                infrastructure.I am specifically interested in IoT and connected vehicles domain.</h3>
+        </div>
+    </div>
+    <div className="about_me_wrapper">
+        <div className="about_me_biref">
+            <h3>Professional Experiance :- </h3>
+            <ul>
+                <li>➤ System Engineer / Backend Developer at Tata Consultancy Services Working for connected
+                    vehicles program for one of the leading automobile company of the world.
+                </li>
+                <li>
+                    ➤ Developed and deployed multiple REST APIs with AWS server less.
+                </li>
+                <li>
+                    ➤ Developed modules to integrate APIs with AWS services like SQS, SNS and IoT etc.
+                </li>
+                <li>
+                    ➤ Integrated various service delivery platforms with connected vehicles for telematics solution.
+                </li>
+                <li>
+                    ➤ Worked on database connection management using RDS read replica and RDS proxy to handle
+                    spikes in database connectivity.
+                </li>
+                <li>
+                    ➤ Worked on different Java applications and batches to move the factory data from manufacturing
+                    plants to backend systems and cloud(Amazon RDS) databases.
+                </li>
+                <li>
+                    ➤ Participated with stakeholders to conduct application level design and debugging sessions.
+                </li>
+                <li>
+                    ➤  Implemented AWS ElastiCache to enhance latency issues of the websites, portals and mobile
+                    applications and managed to decrease response time by almost 2 seconds.
+                </li>
+                <li>
+                    ➤ Worked on entity-sync using IoT services for real time data ingestion to multiple platforms used by
+                    same vehicle.
+                </li>
+            </ul>
+            <h3>Certificates :- </h3>
+            <ul>
+                <li>➤ AWS Certified Cloud Practitioner Issued by Amazon Web Services. </li>
+                <li>➤ AWS Certified Solutions Architect – Associate Issued by Amazon Web Services. </li>
+            </ul>
+            <h3>Experienced Technologies:- </h3>
+            <ul>
+                <li>➤ Amazon Web Services, Typescript, Node.js, Express.js, SQL, Java, Jenkins, Sonarqube, JIRA, 
+                    NoSQL, Python, AWS DynamoDB.</li>
+            </ul>
+            <h3>Known Technologies:-</h3>
+            <ul>
+                <li>➤ HTML, CSS, React JS, Amazon Alexa Custom Skill and Developer Console.</li>
+            </ul>
+            <h3>Experienced Tools and Platforms:-</h3>
+            <ul>
+                <li>➤ Splunk, DbVisualizer, Putty, GIT, Postman, Amazon EC2.</li>
+            </ul>
+            <h3>Achievements:-</h3>
+            <ul>
+                <li>➤ Multiple acknowledgments from Team Leads and Manager.</li>
+                {/* <li>➤ Overall rating of 5 out of 5 for each year. </li> */}
+                <li>➤ Special Achievement Award for outstanding contribution to the organization. </li>
+                <li>➤ First in the State level competition organized by K J Somaiya College of Engineering.</li>
+            </ul>
+            <h3>Patents :-</h3>
+            <ul>
+                <li>➤ Patent application published for Efficient Sensor Based Library Assistant Robot.<br></br>
+                   Application Number :- 202121051885&nbsp;A.</li>
+            </ul>
+            <h3>Education :-</h3>
+            <ul>
+                <li>➤ Bachelor of Engineering. <br></br>7.87 / 10 CGPA</li>
+            </ul>
+            <h3>Contact Details :-</h3>
+            <ul>
+                <li>➤ Email :- shubhamchavan4554@gmail.com. </li>
+                <li>➤ LinkedIn :- <a href="https://www.linkedin.com/in/shubham-chavan-ab6a86167"> Shubham Chavan</a></li>
+            </ul>
+        </div>
+    </div>
+        <Footer></Footer>
+</body>    
+       
         </React.Fragment>
     );
 }
@@ -79,39 +145,3 @@ export default AboutUs
 
 
 
-
-
-
-
-{/*             <header className="component-AboutUs">
-<div class='intro'>
-                    <h1>Thanks for visiting&excl;</h1>
-                    <div class="row">
-                    </div>
-                </div>
-                <section class='section-grid clearfix'>
-                    <div class="row">
-                        <div class='col span-1-of-2 grid'>
-                            <h2>About us</h2>
-                            <p>Thanks for showing interest in this content. <br /> I am a software engineer and working on this
-                                project out of my personal hobby. <br />Particularly I read about the history and social and
-                                political structure and evolution of India in future scope I will be adding some more
-                                categories. <br /> Feel free to connect with us. Also I can add some more categories if someone
-                                has content and want to share that with others.</p>
-                            <h6>&nbsp;</h6>
-                        </div>
-                        <div class='col span-1-of-2 grid'>
-                            <h2>Contact Details and format</h2>
-                            <ul>
-                                <li>Email &dash; shubhamchavan4554@gmail.com</li>
-                                <h3> Format to share content with us &dash;</h3>
-                                <li>Name</li>
-                                <li>Current position (working/student)</li>
-                                <li>Heading for content</li>
-                                <li>Content</li>
-                                <li>&nbsp;</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-            </header> */}

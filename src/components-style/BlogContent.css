@@ -1,0 +1,23 @@
+body{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.article_wrapper {
+    background-color: #ececec;
+    height: auto;
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.article {
+    height: auto;
+    margin: 1% 0;
+    position: relative;
+    height: auto;
+    width: 80rem;
+    background: #fff;
+}

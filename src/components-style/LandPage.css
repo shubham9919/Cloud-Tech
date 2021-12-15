@@ -1,18 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    background-color: #ffffff;
-    color: #555;
-    font-family: charter, Cambria, "Times New Roman", Times, serif;
-    font-size: 20px;
-    font-weight: 300;
-    text-rendering: optimizeLegibility;
-}
-
+/* 
 .LandPage {
     height: 100%;
     width: 100%;
@@ -26,10 +12,24 @@ html {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* align-items: stretch; */
     column-gap: 3rem;
-    /* padding: 1rem 5.7rem; */
     margin:0rem 5.7rem;
     row-gap: 0rem;
     justify-content: center;
+} */
+.Component-Topic-body{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.Component-Topic-cards {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: row;
+    align-items: center;
+    /* border: orangered 1px solid; */
+    flex-wrap: wrap;
+    margin: 0 3%;
+    justify-content:center;
 }

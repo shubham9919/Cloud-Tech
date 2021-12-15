@@ -16,7 +16,6 @@ import Axios from 'axios'
  * @return {*} 
  */
 function LandPage(params) {
-    const state = useState()
     const [pageData, updatedData] = useState(null)
     useEffect(() => {
         Axios.get(`https://of8wybu5c3.execute-api.ap-south-1.amazonaws.com/dev/cloud-tech-fetch?topic=Home-Page-Content`).then((response) => {
@@ -42,22 +41,21 @@ function LandPage(params) {
         return (
             <React.Fragment>
                 <Header></Header>
-                <div className="LandPage">
-                    <div className="flexbox-container">
+                <body className='Component-Topic-body'>
+                    <div className="Component-Topic-cards">
                         {newObjects.map(item => <Topic key={item} Topic_Props={item} />)}
                     </div>
-                </div>
-
+                </body>
             </React.Fragment>
         )
     } else {
         return (
             <React.Fragment>
-                <div className="LandPage">
-                    <div className="flexbox-container">
+                <body className='Component-Topic-body'>
+                    <div className="Component-Topic-cards">
                         {!pageData ? <h1>Loading</h1> : pageData.data.map(item => <Topic key={item} Topic_Props={item} />)}
                     </div>
-                </div>
+                </body>
             </React.Fragment>
         )
     }

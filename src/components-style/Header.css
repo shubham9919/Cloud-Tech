@@ -1,120 +1,95 @@
-* {
+*{
     margin: 0;
     padding: 0;
+    font-size: 62.5%; /* 1rem is by default 16px we want 1rem to be 10px*/
     box-sizing: border-box;
 }
 
-.Header {
+.header-body{
     width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.component-header-header-options{
+    width:min-content;
+}
+
+.component-header-main-header {
+    border-bottom: 1px solid #eaeaea;
+    box-shadow: .1rem .1rem #fafafa;
+    height: auto;
+}
+
+.component-header-header-start {
+    margin: auto 15%;
     display: flex;
-    list-style: none;
     flex-direction: row-reverse;
-    /* background-color:#232f3e; */
+    justify-content:end; 
+
 }
 
-ul{
+.component-header-header-options > ul {
+    margin: .7rem 0;
+    list-style: none;
     display: flex;
-    list-style-type:none;
-    justify-content: center;
 }
 
-ul li{
-    background: white;
-    color:white;
-    margin:.5rem;
-    font-size:1.3rem;
-}
-.clrbtn{
-    background: #e76d09;
+
+.component-header-header-logo {
+    position: relative;
+    justify-self: left;
 }
 
-.blclrbtn{
-    background: rgb(52, 52, 253);
+.component-header-header-logo {
+    display:flex;
+    margin-top: .5%;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px;
+/* img {
+    width:6vw;
+    -o-object-fit: contain;
+    object-fit: contain;
+} */
+
+.active{
+    background-color: rgb(0, 82, 75);
+    color: white !important;
+}
+
+.component-header-header-options > ul > li > a, #component-header-search-icon{
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    color: black; 
+    padding: 1.4rem .8rem;
     text-decoration: none;
-    border-radius: 2rem;
-    color: rgb(0, 0, 0);
-    transition: background-color 0.5s, color 0.2s;
-    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.6rem;
 
 }
 
-.btn:hover {
-    background-color: #e76d09;
-    /* border: 0.1px solid #e67e22; */
+
+
+#component-header-search-icon {
+    margin-top: .5rem;
+    color: black;
+}
+
+@media only screen and (max-width: 998px) {
+    html {
+        font-size: 55%;
+    }
   }
 
-  .background{
-    background-image:url(/src/img/Hero-Cover-Image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  @media only screen and (max-width: 768px) {
+    html {
+        font-size: 45%;
     }
+  }
 
-    .intro-text {
-        text-align: center;
-        margin:7% 20% 0 20% ;
+  @media only screen and (max-width: 767px) { 
+    .header-body > *{
+        display: none;
     }
-    .navlist a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-          
-    /* styling search bar */
-    .search input[type=text]{
-        width: 8rem;;
-        height:1.5rem;
-        border-radius:25px;
-        border: none;
-    }
-          
-    .search{
-        float:right;
-        margin:0 0 0 .7rem;
-        /* margin-top: 0rem; */
-    }
-          
-    .search button{
-        background-color: #05405e;
-        color: #f2f2f2;
-        float: right;
-        padding: 0.3rem 0.2rem;
-        /* margin-right: 16px; */
-        font-size: 0.8rem;
-        border: none;
-        cursor: pointer;
-    } 
-
-    .intro-text p {
-        font-weight:normal;
-        font-size: 2rem;
-        line-height: 2.5rem;
-    }
-
-    @media only screen and (min-width: 200px) and (max-width: 700px) {
-        .intro-text {
-            margin: 5%;
-        }
-        .intro-text p {
-            font-weight:normal;
-            font-size: 1.5rem;
-            line-height:normal;
-        }
-
-        .intro-text cite {
-            font-size: .8rem;
-        }
-        ul li{
-            font-size: 1rem;
-        }
-
-    }
-
-    @media only screen and (min-width: 400px) and (max-width: 700px) {
-        .intro-text {
-            margin-top: 20%;
-        }
-    }
+   }

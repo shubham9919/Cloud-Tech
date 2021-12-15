@@ -2,12 +2,12 @@ import React from "react";
 import '../../components-style/ArticleCredits.css'
 
 
-function ArticleCredits(params) {
+function ArticleCredits(properties) {
+    let creditDetails = properties.articleCredits.split(">")
     return (
         <React.Fragment>
-            <div className="Component-ArticleFooter-Auther">
-                <p> <cite>Author - {params.Auther}</cite></p>
-                <p>AWS Solutions Architect.</p>
+            <div className="by_and_date">
+                 <h3> <span className="By">By</span> {creditDetails[0]} <span className="date">{creditDetails[1]}.</span></h3>
             </div>
         </React.Fragment>
     )

@@ -1,13 +1,14 @@
 import React from "react";
 import "../../components-style/ArticleHeader.css"
 
-function ArticleHeader() {
+function ArticleHeader(properties) {
     return (
         <React.Fragment>
-            <div className="article-header-element">
-                <a href="/"><li className="btn">&larr;  Back</li></a>
+            <div class="article_title">
+                <h3>
+                    {properties.articleName} 
+                </h3>
             </div>
-
         </React.Fragment>
     )
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import Blog from "../Blogs/Blog";
 import LandPage from "../Land-Page/LandPage";
 
 function LoadSearchResultMatch(props) {

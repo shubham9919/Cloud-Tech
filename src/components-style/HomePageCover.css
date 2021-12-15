@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%; /* 1rem is by default 16px we want 1rem to be 10px*/
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+
+}
+.component-homepage-cover-body{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.component-homepage-cover-backgoud{
+    position: relative;
+    height: 50rem;
+    background-image:url(/src/img/Hero-Cover-Image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.component-homepage-cover-intro-text {
+    text-align: center;
+    position:absolute;
+    top: 15rem;
+    margin: 0 22rem;
+}
+
+.component-homepage-cover-intro-text p {
+    font-weight:normal;
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+}
+
+cite {
+    font-size: 1.5rem;
+}
+
+
+
+
+  @media only screen and (max-width: 1000px) {
+    .component-homepage-cover-body {
+        font-size: 45%;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .component-homepage-cover-body {
+        font-size: 55%;
+    }
+    .component-homepage-cover-intro-text {
+        margin: 0 2rem;
+        top: 7rem;
+
+    }
+}

@@ -1,39 +1,95 @@
-* {
+*{
     margin: 0;
     padding: 0;
+    font-size: 62.5%; /* 1rem is by default 16px we want 1rem to be 10px*/
     box-sizing: border-box;
+    font-family: 'Rubik', Arial, sans-serif;
+
+}
+.Component-Footer-body{
+    width: 100%;
+    max-width: 1280px;
+    /* margin: 2rem auto 0 auto; */
+    box-shadow: .1rem .1rem rgb(177, 177, 177);
+}
+.Component-Footer-my_footer {
+    background: linear-gradient( #1d1d1d 100%, #868686 100%);
+    width: 100%;
+    padding-top: 1rem;
+    /* height: 100px; */
 }
 
-footer {
-    margin-top: 3rem;
-    background-color:rgb(48, 48, 48);
+.Component-Footer-my_footer_topics {
+    display: flex;
+    margin-bottom: 2rem;
 }
 
-.copyright-text{
-    color: rgb(104, 104, 104);
-    text-align: center;
+.Component-Footer-topic {
+    position: relative;
+    top: 17%;
+    left: 20%;
+    margin-left: 2rem;
 }
 
+.Component-Footer-topic > h3, .Component-Footer-linkouts > h3{
+    font-size: 1.4rem;
+    color: white;
+    font-weight: lighter;
+    font-weight: bold;
+}
 
-.onpage-link-outs{
+ul{
+    list-style: none;
+}
+
+li{
+    /* margin-top: .1rem; */
+    font-size: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    /* font-weight: 0; */
+}   
+
+.Component-Footer-linkouts{
+    border-top: .1rem solid rgb(255, 255, 255);
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: .9rem 0;
+
+}
+
+.Component-Footer-linkouts > h3{
+    font-size: 1.2rem;
+    margin-top: .6rem;
+}
+
+.Component-Footer-site_nav_ul{
     display: flex;
 }
 
-.onpage-link-outs li{
-    list-style: none;
-    margin: 1rem;
+
+.Component-Footer-active {
+    transition: .5s;
+    color: red;
 }
 
-a {
-    text-decoration: none;
-    color: rgb(104, 104, 104);
+.Component-Footer-site_nav_ul > li{
+    margin:0 1rem;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 700px) {
-    .onpage-link-outs li{
-        margin: 1rem 0 2rem 1rem
-        }
-        .copyright-text{
-            font-size: .7rem;
-        }
-}
+
+@media only screen and (max-width: 998px) {
+    html {
+        font-size: 55%;
+    }
+  }
+
+  @media only screen and (max-width: 998px) {
+    html {
+        font-size: 45%;
+    }
+  }

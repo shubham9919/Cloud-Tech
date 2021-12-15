@@ -4,6 +4,9 @@ import LandPage from "../Land-Page/LandPage";
 import '../../components-style/normalize.css'
 import Footer from "../Footer/Footer";
 import axios from "axios";
+import HamburgerHeader from "../Hamburger-Header/HamburgerHeader";
+import HomePageCover from "../HomePageCover/HomePageCover.js";
+
 
 function Home(props) {
     const [user, setUser] = useState(null)
@@ -22,9 +25,14 @@ function Home(props) {
     }, [])
     return (
         <React.Fragment>
-            <Header></Header>
+          <HamburgerHeader></HamburgerHeader>
+          <Header></Header>
+          <HomePageCover></HomePageCover>
+          <LandPage></LandPage>
+          <Footer></Footer>
+            {/*
             <LandPage></LandPage>
-            <Footer></Footer>
+            <Footer></Footer> */}
         </React.Fragment>
     );
 }

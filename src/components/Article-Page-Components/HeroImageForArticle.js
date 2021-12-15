@@ -10,7 +10,7 @@ function HeroImageForArticle(params) {
                 <img src={params.image} alt={params.logo}></img>
             </div>
             <div className="Component-HeroImageForArticle-picCourtesy">
-                <a href={params.courtesy} style={{ textDecoration: "none" }} target="_blank" >{picCourtecy}</a>
+                <a href={params.courtesy} style={{ textDecoration: "none" }} target="_blank" rel="noopener">{picCourtecy}</a>
             </div>
         </React.Fragment>
     )

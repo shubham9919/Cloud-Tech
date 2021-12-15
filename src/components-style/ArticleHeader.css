@@ -1,23 +1,29 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 
-.article-header-element a{
-    text-decoration: none;
-}
+    .article_title{
+        margin: 1rem 2rem;
+        text-align: center;
+    }
 
-.article-header-element li {
-    margin: 1rem;
-    list-style: none;
-    color: rgb(104, 104, 104);
-    transform: none;
-}
+    
+    .article_title > h3 {
+        font-size: 3.9rem;
+        font-weight: 500;
+    }
+    @media only screen and (max-width: 1044px) {
+        html {
+            font-size: 79%;
+        }
+      }
+    
+      @media only screen and (max-width: 998px) {
+        html {
+            font-size: 55%;
+        }
+      }
 
-@media only screen and (min-width: 200px) and (max-width: 700px) {
-    /* .article-header-element {
-        display: none;
-    } */
-}
+      @media only screen and (max-width: 700px) {
+        html {
+            font-size: 45%;
+        }
+      }

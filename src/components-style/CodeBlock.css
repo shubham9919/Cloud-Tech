@@ -1,10 +1,62 @@
-* {
+
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;   
+    font-size: 62.5%; /* 1rem is by default 16px we want 1rem to be 10px*/
+    box-sizing: border-box;
+    font-family: 'Rubik', Arial, sans-serif;
+
+}
+.codeblock_component_body{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .Component-CodeBlock-main{
+    height:30rem;
+    /* width: 64%; */
+    border:.1rem solid #ccc;
+    font-family:  Georgia, Garamond, Serif;
+    font-size: 1.2rem;
+    overflow:auto;
+    display: flex;
+    margin:1rem auto;
+    text-align: center;
+    margin: 3rem 2rem;
+}
+
+/*  */
+
+  pre{
+      display: flex;
+      justify-content: left;
+      text-align: left;
+  }
+
+ @media only screen and (max-width: 1044px) {
+    html {
+        font-size: 79%;
+    }
+  }
+
+  @media only screen and (max-width: 998px) {
+    html {
+        font-size: 55%;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    html {
+        font-size: 45%;
+    }
+  }
+
+
+
+  
+
+/* .Component-CodeBlock-main{
     height:20rem;
     width: 64%;
     border:1px solid #ccc;
@@ -36,4 +88,4 @@ pre code {
         width: 82%;
         margin-bottom: 3rem;
     }
-  }
+  } */
