@@ -21,7 +21,7 @@ function App() {
       <Route exact path="/search" component={LoadSearchResultMatch} />
       <Route exact path="/user/:oauthid" component={Home} />
       <Route exact path="/" component={Home} />
-      <Route exact path="/aboutus" component={AboutUs} />
+      <Route exact path="/shubham-chavan" component={AboutUs} />
       <Route exact path="/article/:topic" component={Blog} />
     </Switch>
   );

@@ -27,7 +27,7 @@ function HamburgerHeader() {
                         <div className="component-hamburger-hamburger-menu-opt">
                             <ul className={`hm ${isClicked === true?"component-hamburger-side-nav-visible":"hidden"}`}>
                                 <li><a href="/"> Home </a></li>
-                                <li><a href="/aboutus"> About Me </a></li>
+                                <li><a href="/shubham-chavan"> About Me </a></li>
                                 <li><a href="/login"> Sign In </a></li>
                             </ul>
                         </div>

@@ -3,7 +3,7 @@ import '../../components-style/Header.css'
 
 function Header() {
     const [isHover, setHover] = useState(-1)
-    const paths = ["/", "/aboutus", "/login"]
+    const paths = ["/", "/shubham-chavan", "/login"]
     let routes = ["Blogs", "AboutMe", "Sign Up"]
     const pathList = paths.map((path, index) => <li> <a
         className={`${path == isHover || index === 2 ? "active" : ""}`}
