@@ -41,7 +41,7 @@ function Footer() {
                         <div className="Component-Footer-site_nav">
                             <ul className="Component-Footer-site_nav_ul">
                                 <li><a href="/">Home</a></li>
-                                <li><a href="/aboutus"> About Me</a></li>
+                                <li><a href="/shubham-chavan"> About Me</a></li>
                                 <li><a href="/login">Sign Up</a></li>
                             </ul>
                         </div>
