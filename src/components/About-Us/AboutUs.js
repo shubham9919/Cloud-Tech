@@ -42,7 +42,7 @@ function AboutUs() {
     </div>
     <div className="about_me_wrapper">
         <div className="about_me_biref">
-            <h3>Professional Experiance :- </h3>
+            <h3>Professional Experience :- </h3>
             <ul>
                 <li>➤ System Engineer / Backend Developer at Tata Consultancy Services Working for connected
                     vehicles program for one of the leading automobile company of the world.
@@ -54,7 +54,7 @@ function AboutUs() {
                     ➤ Developed modules to integrate APIs with AWS services like SQS, SNS and IoT etc.
                 </li>
                 <li>
-                    ➤ Integrated various service delivery platforms with connected vehicles for telematics solution.
+                    ➤ Integrated various service delivery platforms with connected vehicles for telematics solutions.
                 </li>
                 <li>
                     ➤ Worked on database connection management using RDS read replica and RDS proxy to handle
@@ -98,8 +98,8 @@ function AboutUs() {
             <ul>
                 <li>➤ Multiple acknowledgments from Team Leads and Manager.</li>
                 {/* <li>➤ Overall rating of 5 out of 5 for each year. </li> */}
-                <li>➤ Special Achievement Award for outstanding contribution to the organization. </li>
-                <li>➤ First in the State level competition organized by K J Somaiya College of Engineering.</li>
+                <li>➤ Special Achievement Award for outstanding contribution to the organisation. </li>
+                <li>➤ First in the State level competition organised by K J Somaiya College of Engineering.</li>
             </ul>
             <h3>Patents :-</h3>
             <ul>
