@@ -16,7 +16,6 @@ function Blog(props) {
             topicPage(response)
         })
     }, [])
-
     return (
         <React.Fragment>
 

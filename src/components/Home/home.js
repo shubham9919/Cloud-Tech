@@ -9,20 +9,14 @@ import HomePageCover from "../HomePageCover/HomePageCover.js";
 
 
 function Home(props) {
-    const [user, setUser] = useState(null)
-    console.log(props)
-    useEffect(() => {
-      axios({
-        method: "GET",
-        withCredentials: true,
-        url: `${process.env.REACT_APP_IS_LOGGEDIN}/${props.match.params.oauthid}`
-        // url: `http://localhost:5000/*/${props.match.params.oauthid}`
-      }).then((res) => {
-        console.log(`--------------${JSON.stringify(res)}------------------`)
-        setUser(res)
-        sessionStorage.setItem('userToken', res)
-      })
-    }, [])
+    // console.log(props)
+    if(props && props.location && props.location.search){
+        let tokens = props.location.search.split('&')
+        // console.log(tokens[0].split('=')[1], tokens[1].split('=')[1])
+        sessionStorage.setItem('OAuthToken', tokens[0].split('=')[1])
+        sessionStorage.setItem('OAuthRefreshToken', tokens[1].split('=')[1])
+    }
+
     return (
         <React.Fragment>
           <HamburgerHeader></HamburgerHeader>

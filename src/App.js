@@ -13,18 +13,19 @@ import LoginPage from './components/Login/LoginPage';
 require('dotenv').config();
 //https://stackoverflow.com/questions/40714583/how-to-specify-a-port-to-run-a-create-react-app-based-project/48669909#48669909
 
-function App() {
-
-  return (
-    <Switch>
-      <Route exact path="/login" component={LoginPage} />
-      <Route exact path="/search" component={LoadSearchResultMatch} />
-      <Route exact path="/user/:oauthid" component={Home} />
-      <Route exact path="/" component={Home} />
-      <Route exact path="/shubham-chavan" component={AboutUs} />
-      <Route exact path="/article/:topic" component={Blog} />
-    </Switch>
-  );
+class App extends React.Component  {
+  render() {
+    return (
+      <Switch>
+        <Route exact path="/login" component={LoginPage} />
+        <Route exact path="/search" component={LoadSearchResultMatch} />
+        <Route exact path="/user/:oauthid" component={Home} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/shubham-chavan" component={AboutUs} />
+        <Route exact path="/article/:topic" component={Blog} />
+      </Switch>
+    );
+  }
 }
 
 export default App;
