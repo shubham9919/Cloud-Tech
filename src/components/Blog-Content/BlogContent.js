@@ -11,8 +11,8 @@ import Footer from "../Footer/Footer";
 import HamburgerHeader from "../Hamburger-Header/HamburgerHeader";
 import { Redirect } from "react-router";
 import axios from "axios";
-
 import "../../components-style/BlogContent.css"
+require('dotenv').config();
 
 /**
  * @todo PASS HIGHLIGHTED TEXT IN THE HIGHLIGHTED COMPONENT
@@ -20,6 +20,7 @@ import "../../components-style/BlogContent.css"
  * @param {*} componentProps
  * @return {*} 
  */
+
 
 function BlogContent(componentProps) {
 
@@ -34,6 +35,8 @@ function BlogContent(componentProps) {
             } else {
                 dataFetchedupdate(false)
             }
+        } else {
+            dataFetchedupdate(false)
         }
     }, [])
 
@@ -52,7 +55,6 @@ function BlogContent(componentProps) {
         const componentKeys = Object.keys(componentInputs)
         let ComponentArray = []
         if (!componentInputs.isPremium || isDataFetched) {
-
             for (const key in componentKeys) {
                 let lowKey = componentKeys[key].toLowerCase()
                 if (lowKey.includes("title")) {
@@ -79,7 +81,9 @@ function BlogContent(componentProps) {
             }
         }
         return (
+
             <React.Fragment>
+                {/* <ArticleHeader></ArticleHeader> */}
                 <Header></Header>
                 <HamburgerHeader></HamburgerHeader>
                 <div className="article_wrapper">
@@ -96,18 +100,25 @@ function BlogContent(componentProps) {
     }
 }
 
-
+/**
+ * 
+ * @description This function will call the auth server to validate JWT token
+ * @return {*} 
+ * 
+ */
 async function callApi() {
     try {
-        const AUTH_TOKEN = 'Bearer '.concat(sessionStorage.getItem('OAuthToken'));
+        const AuthStr = 'Bearer '.concat(sessionStorage.getItem('OAuthToken'));
         let res = await axios.get(process.env.REACT_APP_IS_LOGGEDIN, {
             headers: {
-                Authorization: AUTH_TOKEN
+                Authorization: AuthStr
             },
             withCredentials: true,
         })
+        console.log(res)
         return res
     } catch (error) {
+        console.log(error)
         return error
     }
 }
