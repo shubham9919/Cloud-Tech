@@ -43,6 +43,7 @@ cite {
     background-color: rgb(0, 82, 75);
     color: white;
     font-family: 'Rubik', sans-serif;
+    border-radius: 8rem;
 }
 
 .blogPosts h2 {

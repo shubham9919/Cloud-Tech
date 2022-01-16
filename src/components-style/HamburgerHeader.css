@@ -64,6 +64,7 @@
     display: none;
     cursor: pointer;
     color: white;
+    font-size: .2rem;
 }
 
 .component-hamburger-hamburger-menu-opt{
