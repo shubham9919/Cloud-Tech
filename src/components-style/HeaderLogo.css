@@ -1,0 +1,45 @@
+.Component-HeaderLogo-img {
+    width: 8rem;
+    margin-top: 1.5rem;
+    /* height: 6rem; */
+}
+
+.Component-HeaderLogo-img h2 {
+    font-size: 1.7rem;
+    font-family:'Domine', serif;
+    margin-top: .1rem;
+    font-weight: 50;
+    letter-spacing: .1rem;
+    color: rgb(0, 82, 75);
+}
+
+.Component-HeaderLogo-img img {
+    /* border: .1rem solid rgb(44, 44, 44); */
+    max-width:100%;
+    max-height:100%;
+}
+
+
+
+
+
+@media only screen and (max-width: 998px) {
+    html {
+        font-size: 45%;
+    }
+
+    .Component-HeaderLogo-img {
+        margin: 1rem
+    }
+  }
+
+
+  @media  only screen and (min-width: 768px){ 
+    .component-hamburger-hamburger-header-body > *{
+        display: none;
+    }
+
+    .Component-HeaderLogo-img {
+        margin: 1rem
+    }
+   }

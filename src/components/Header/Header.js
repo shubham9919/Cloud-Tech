@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import HeaderLogo from '../Header-Logo/HeaderLogo'
 import '../../components-style/Header.css'
 
 function Header() {
@@ -22,11 +23,14 @@ function Header() {
             </head>
             <body className='header-body'>
                 <div className="component-header-main-header">
+
                     <div className="component-header-header-start">
-                        <a href="/" id="component-header-search-icon"><i className="fas fa-binoculars fa-lg"></i></a>
+                    <HeaderLogo></HeaderLogo>
+
                         <div className="component-header-header-options">
-                            <ul>
+                            <ul>        
                                 {pathList}
+                                <a href="/" id="component-header-search-icon"><i className="fas fa-binoculars fa-lg"></i></a>
                             </ul>
                         </div>
                     </div>

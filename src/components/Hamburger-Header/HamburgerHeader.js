@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../../components-style/HamburgerHeader.css'
+import HeaderLogo from '../Header-Logo/HeaderLogo'
 
 
 function HamburgerHeader() {
@@ -15,9 +16,10 @@ function HamburgerHeader() {
             <body className="component-hamburger-hamburger-header-body">
                 <div className="component-hamburger-hamburger-menu">
                     <div className="component-hamburger-hamburger-menu-website-logo">
+                        <HeaderLogo></HeaderLogo>
                     </div>
                     <div className={`component-hamburger-hamburger-menu-content`}>
-                        <span className={`component-hamburger-hamburger-menu-symbol hm ${isClicked === true?"component-hamburger-side-nav-visible":""}`} onClick={() => setClicked(true)}><i className="fas fa-bars fa-7x"></i></span>
+                        <span className={`component-hamburger-hamburger-menu-symbol hm ${isClicked === true?"component-hamburger-side-nav-visible":""}`} onClick={() => setClicked(true)}><i className="fas fa-bars fa-10x"></i></span>
                     </div>
                     <span id="outside"></span>
                     <div className={`component-hamburger-hamburger-menu-show hm ${isClicked === true?"component-hamburger-side-nav-visible":""}`}>
