@@ -48,7 +48,7 @@ function Footer() {
                     </div>
                     <div className="Component-Footer-copyrights">
 
-                    <h3> &nbsp; &copy; 2021 Copyrights Simply Cloud</h3>
+                    <h3> &nbsp; &copy; 2021 Copyrights CloudSage</h3>
                     </div>
                     
                 </div>
