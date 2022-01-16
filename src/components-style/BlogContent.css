@@ -11,6 +11,7 @@ body{
     justify-content:space-evenly;
     flex-wrap: wrap;
     flex-direction: row;
+
 }
 
 .article {
@@ -20,4 +21,6 @@ body{
     height: auto;
     width: 80rem;
     background: #fff;
+    margin-bottom: 5rem;
+
 }
