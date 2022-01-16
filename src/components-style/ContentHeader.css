@@ -7,13 +7,13 @@
 .topic_note{
     display: flex;
     justify-content: left;
-    background-color: #434343;
+    background-color: #3D3D3D ;
 }
 
 .pencil {
     width: 5rem;
     position: relative;
-    background-color: rgb(255, 0, 0);
+    background-color: #DD0004;
     padding: 2.5rem;
 }
 
