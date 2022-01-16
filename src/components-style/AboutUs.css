@@ -8,6 +8,7 @@ body{
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
+    
 }
 
 .about_me_starter {
@@ -36,7 +37,7 @@ body{
 .my_name > h3 {
     font-size: 3rem;
     font-weight: 400;
-    font-family: 'Lobster', cursive;
+    font-family: 'Domine', serif;;
 }
 
 .my_name {
@@ -54,15 +55,16 @@ body{
 .about_me_biref > h3 {
     font-size: 2.4rem;
     font-weight: 400;
-    font-family: 'Lobster', cursive;
+    font-family: 'Domine', serif;;
     margin-top: 2rem;
 }
 
 .about_me_biref > ul > li, .about_me_biref > ul > li > a {
-    font-family: 'Rubik', sans-serif;;
-    font-size: 1.8rem;
+    font-family: 'Domine', serif;;
+    font-size: 2.1rem;
     font-weight: 500;
     margin: 1.5rem 0 0 3rem;
+    line-height: 3rem;
     list-style: none;
 }
 

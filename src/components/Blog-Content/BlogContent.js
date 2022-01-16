@@ -96,7 +96,6 @@ function BlogContent(componentProps) {
                 <Footer></Footer>
             </React.Fragment>
         )
-
     }
 }
 

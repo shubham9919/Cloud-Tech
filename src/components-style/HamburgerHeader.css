@@ -10,6 +10,7 @@
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
+    /* position: fixed; */
 }
 
 .component-hamburger-hamburger-menu {
@@ -25,6 +26,7 @@
     /* border: .1rem solid rgb(2, 0, 128); */
     left: 25%;
     right: 25%;
+
 }
 
 .component-hamburger-hamburger-menu-content {

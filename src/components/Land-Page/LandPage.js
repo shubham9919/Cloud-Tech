@@ -53,7 +53,7 @@ function LandPage(params) {
             <React.Fragment>
                 <body className='Component-Topic-body'>
                     <div className="Component-Topic-cards">
-                        {!pageData ? <h1>Loading</h1> : pageData.data.map(item => <Topic key={item} Topic_Props={item} />)}
+                        {!pageData ? <img src='/LoadingGif.gif'></img> : pageData.data.map(item => <Topic key={item} Topic_Props={item} />)}
                     </div>
                 </body>
             </React.Fragment>

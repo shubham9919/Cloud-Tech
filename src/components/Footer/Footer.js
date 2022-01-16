@@ -37,7 +37,7 @@ function Footer() {
 
                     </div> */}
                     <div className="Component-Footer-linkouts">
-                        <h3> &nbsp; Copyrights &copy; Simply-Cloud</h3>
+                        {/* <h3> &nbsp; Copyrights &copy; Simply-Cloud</h3> */}
                         <div className="Component-Footer-site_nav">
                             <ul className="Component-Footer-site_nav_ul">
                                 <li><a href="/">Home</a></li>
@@ -46,6 +46,11 @@ function Footer() {
                             </ul>
                         </div>
                     </div>
+                    <div className="Component-Footer-copyrights">
+
+                    <h3> &nbsp; &copy; 2021 Copyrights Simply Cloud</h3>
+                    </div>
+                    
                 </div>
             </body>
         </React.Fragment>

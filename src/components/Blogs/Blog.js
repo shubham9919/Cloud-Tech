@@ -20,7 +20,7 @@ function Blog(props) {
         <React.Fragment>
 
             {/* <div className="Component-blog"> */}
-            {!page ? <h1>Loading..</h1> : <BlogContent properties={page}></BlogContent>}
+            {!page ? <img src='/LoadingGif.gif'></img> : <BlogContent properties={page}></BlogContent>}
             {/* </div> */}
 
         </React.Fragment>
