@@ -21,6 +21,9 @@
   font-weight: 590;
   font-family: 'Domine', serif;
 }
+.para_content > p > b {
+  font-size: 1.7rem;
+}
 
 .para_content > p > a {
   font-size: 1.7rem;
@@ -31,7 +34,13 @@
 }
 
 .para_content > li > em, .para_content > em {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
+  line-height: 3rem;
+  font-weight: bold;
+}
+
+.para_content > li > b{
+  font-size: 1.7rem;
   line-height: 3rem;
   font-weight: bold;
 }
