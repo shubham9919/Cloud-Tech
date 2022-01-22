@@ -6,6 +6,7 @@ import '../../components-style/LandPage.css'
 import Header from '../Header/Header'
 import { useEffect, useState } from 'react'
 import Axios from 'axios'
+import Loading from '../Loading/Loading'
 
 
 
@@ -53,7 +54,7 @@ function LandPage(params) {
             <React.Fragment>
                 <body className='Component-Topic-body'>
                     <div className="Component-Topic-cards">
-                        {!pageData ? <img src='/LoadingGif.gif'></img> : pageData.data.map(item => <Topic key={item} Topic_Props={item} />)}
+                        {!pageData ? <Loading></Loading> : pageData.data.map(item => <Topic key={item} Topic_Props={item} />)}
                     </div>
                 </body>
             </React.Fragment>

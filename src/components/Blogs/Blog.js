@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import React from "react"
 import Axios from 'axios'
 import BlogContent from "../Blog-Content/BlogContent"
+import Loading from "../Loading/Loading"
 
 
 //https://www.pragimtech.com/blog/reactjs/routing-part-4-in-react/
@@ -20,7 +21,7 @@ function Blog(props) {
         <React.Fragment>
 
             {/* <div className="Component-blog"> */}
-            {!page ? <img src='/LoadingGif.gif'></img> : <BlogContent properties={page}></BlogContent>}
+            {!page ? <Loading></Loading>: <BlogContent properties={page}></BlogContent>}
             {/* </div> */}
 
         </React.Fragment>

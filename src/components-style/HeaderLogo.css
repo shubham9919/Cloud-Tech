@@ -2,16 +2,9 @@
     width: 8rem;
     margin-top: 1.5rem;
     /* height: 6rem; */
+    cursor: pointer;
 }
 
-.Component-HeaderLogo-img h2 {
-    font-size: 1.7rem;
-    font-family:'Domine', serif;
-    margin-top: .1rem;
-    font-weight: 50;
-    letter-spacing: .1rem;
-    color: rgb(0, 82, 75);
-}
 
 .Component-HeaderLogo-img img {
     /* border: .1rem solid rgb(44, 44, 44); */

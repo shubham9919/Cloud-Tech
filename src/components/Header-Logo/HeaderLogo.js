@@ -6,8 +6,8 @@ function HeaderLogo(params) {
         <React.Fragment>
 
             <div  className="Component-HeaderLogo-img">
-            <img src="/zigzag.png"></img>
-            <h2>CloudSage</h2>
+            <a href='/'><img src="/CloudSage.jpg"></img></a>
+            {/* <h2>CloudSage</h2> */}
             </div>
         </React.Fragment>
     )

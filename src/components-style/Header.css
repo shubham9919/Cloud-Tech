@@ -54,6 +54,7 @@
 .active{
     background-color: rgb(0, 82, 75);
     color: white !important;
+    border-radius: 1rem;
 }
 
 .component-header-header-options > ul > li > a, #component-header-search-icon{
@@ -65,7 +66,7 @@
     text-decoration: none;
     font-family: 'Rubik', sans-serif;
     font-size: 1.6rem;
-
+    margin-left: .1rem;
 }
 
 
