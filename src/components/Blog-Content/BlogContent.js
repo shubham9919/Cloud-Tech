@@ -77,9 +77,11 @@ function BlogContent(componentProps) {
         } else {
             if (isDataFetched == null || isDataFetched == true) {
                 setInterval(() => {
+                    sessionStorage.setItem('redirectToLastPage', "true")
                     return <Redirect to="/login"></Redirect>
                 }, 20000);
             } else {
+                sessionStorage.setItem('redirectToLastPage', "true")
                 return <Redirect to="/login"></Redirect>
             }
         }

@@ -19,8 +19,9 @@ function Home(props) {
     }
 
     const history = useHistory();
-
+    
     let fromPage = sessionStorage.getItem("fromPage")
+    let redirectToLastPage = sessionStorage.getItem("redirectToLastPage")
 
     let lastPageValue = sessionStorage.getItem('lastPage') || null
     let lastPageRedirect = `/article/${lastPageValue}`
@@ -32,7 +33,7 @@ function Home(props) {
     let token = sessionStorage.getItem('OAuthToken') || null
     let redirectToLastPageFlag
 
-    if (token && lastPageValue) {
+    if (token && lastPageValue && redirectToLastPage === "true") {
         redirectToLastPageFlag = true
     } else {
         redirectToLastPageFlag = false
@@ -40,6 +41,7 @@ function Home(props) {
 
     if (redirectToLastPageFlag) {
         sessionStorage.removeItem('lastPage')
+        sessionStorage.removeItem('redirectToLastPage')
         return <Redirect to={lastPageRedirect}></Redirect>
     } else {
         return (
