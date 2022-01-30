@@ -7,9 +7,9 @@
 }
 
 .component-Promotions-course {
-    margin: 1rem 0; 
+    margin: 4rem 0 2rem 0; 
     text-align: justify;
-    width: 39rem;
+    width: 35rem;
 }
 
 .component-Promotions-tiles {
@@ -39,7 +39,7 @@
 
 .component-Promotions-coursePic {
     background-color: #fff;
-    height: 25rem;
+    height: 20rem;
     text-align: center;
     border-top: 3px solid green;
     border-bottom-right-radius: 2rem;
@@ -69,7 +69,7 @@
     padding: 2rem;
     background-color: #fff;
     margin: .5rem 0;
-    width: 39rem;
+    width: 35rem;
     min-height: 10rem;
     border-top-right-radius: 2rem;
     border-top-left-radius: 2rem;

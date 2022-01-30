@@ -23,7 +23,7 @@ function LandPageLogin() {
                     <p
                         style={{
                             fontSize: "3rem",
-                            color: "orange"
+                            color: "blue"
                         }}
                     >CloudSage.</p>
                 </div>

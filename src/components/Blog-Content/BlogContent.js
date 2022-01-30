@@ -4,12 +4,10 @@ import Header from "../Header/Header";
 import ArticleParagraph from "../Article-Page-Components/ArticleParagraph";
 import ArticleCredits from "../Article-Page-Components/ArticleCredits";
 import AricleImage from "../Article-Page-Components/ArticleImages";
-// import SearchBar from "../Search-Bar/SearchBar";
 import CodeBlock from "../Article-Page-Components/CodeBlock";
 import ArticleHeader from "../Article-Page-Components/ArticleHeader";
 import Footer from "../Footer/Footer";
 import HamburgerHeader from "../Hamburger-Header/HamburgerHeader";
-import Promotions from "../Promotions/Promotions";
 import { Redirect } from "react-router";
 import axios from "axios";
 import "../../components-style/BlogContent.css"

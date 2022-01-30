@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import { useHistory } from "react-router-dom";
+
 import Header from "../Header/Header";
 import LandPage from "../Land-Page/LandPage";
 import '../../components-style/normalize.css'
@@ -11,6 +13,8 @@ import { Redirect } from "react-router";
 
 
 
+
+
 function Home(props) {
     if (props && props.location && props.location.search) {
         let tokens = props.location.search.split('&')
@@ -18,14 +22,21 @@ function Home(props) {
         sessionStorage.setItem('OAuthRefreshToken', tokens[1].split('=')[1])
     }
 
+    const history = useHistory();
+    
     let lastPageValue = sessionStorage.getItem('lastPage') || null
     let lastPageRedirect = `/article/${lastPageValue}`
     let token = sessionStorage.getItem('OAuthToken') || null
     let redirectToLastPageFlag
+
     if (token && lastPageValue) {
         redirectToLastPageFlag = true
     } else {
         redirectToLastPageFlag = false
+    }
+
+    if(history.action === "POP") {
+        sessionStorage.removeItem("lastPage")
     }
 
     if (redirectToLastPageFlag) {
