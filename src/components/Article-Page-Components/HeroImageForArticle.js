@@ -2,7 +2,6 @@ import React from "react";
 import '../../components-style/HeroImageForArticle.css'
 
 function HeroImageForArticle(params) {
-    console.log("params--->" + JSON.stringify(params))
     let picCourtecy = params.courtesy ? `Pic Courtesy: ${params.courtesyDomain}` : null
     return (
         <React.Fragment>

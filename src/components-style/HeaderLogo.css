@@ -18,7 +18,8 @@
     }
 
     .Component-HeaderLogo-img {
-        margin: .3rem
+        margin: .3rem;
+        margin-top: .4rem;
     }
 }
 

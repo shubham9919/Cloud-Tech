@@ -10,7 +10,6 @@ function PromotionsTiles() {
 
     useEffect(() => {
         Axios.get(`https://of8wybu5c3.execute-api.ap-south-1.amazonaws.com/dev/cloud-tech-fetch?topic=promotionsData`).then((response) => {
-            console.log(response)
             promotionsDataLoaded(response)
         })
     }, [])

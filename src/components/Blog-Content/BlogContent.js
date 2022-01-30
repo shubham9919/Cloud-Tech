@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
+
 import ContentHeader from "../Article-Page-Components/ContentHeader";
 import Header from "../Header/Header";
 import ArticleParagraph from "../Article-Page-Components/ArticleParagraph";
@@ -29,7 +31,6 @@ function BlogContent(componentProps) {
         if (sessionStorage.getItem('OAuthToken') && Object.keys(sessionStorage.getItem('OAuthToken').length > 0)) {
             let apiRes = await callApi()
             if (apiRes.data == "user found") {
-                console.log(apiRes.data)
                 dataFetchedupdate(true)
             } else {
                 dataFetchedupdate(false)
@@ -41,6 +42,9 @@ function BlogContent(componentProps) {
 
     const componentInputs = componentProps.properties.data && componentProps.properties.data[0]
     let checker = componentProps.properties.data[0].title
+
+    const history = useHistory();
+
 
     if (checker == "undefined" || checker == undefined) {
         return (
@@ -92,6 +96,7 @@ function BlogContent(componentProps) {
                     </div>
                 </div>
                 <Footer></Footer>
+                {sessionStorage.setItem("fromPage",history.location.pathname)}
             </React.Fragment>
         )
     }
@@ -112,10 +117,8 @@ async function callApi() {
             },
             withCredentials: true,
         })
-        console.log(res)
         return res
     } catch (error) {
-        console.log(error)
         return error
     }
 }

@@ -13,7 +13,6 @@ function Blog(props) {
     const [page, topicPage] = useState(null)
     useEffect(() => {
         Axios.get(`https://of8wybu5c3.execute-api.ap-south-1.amazonaws.com/dev/cloud-tech-fetch?topic=${props.articleName || props.match.params.topic}`).then((response) => {
-            console.log(response)
             topicPage(response)
         })
     }, [])

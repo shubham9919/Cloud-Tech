@@ -11,10 +11,6 @@ import PromotionsTiles from "../Promotions/PromotionTiles";
 import LandPageLogin from "../LandPageLogin/LandPageLogin";
 import { Redirect } from "react-router";
 
-
-
-
-
 function Home(props) {
     if (props && props.location && props.location.search) {
         let tokens = props.location.search.split('&')
@@ -24,12 +20,15 @@ function Home(props) {
 
     const history = useHistory();
 
-    if(history.action.toLowerCase() === "pop") {
-        sessionStorage.removeItem("lastPage")
-    }
+    let fromPage = sessionStorage.getItem("fromPage")
 
     let lastPageValue = sessionStorage.getItem('lastPage') || null
     let lastPageRedirect = `/article/${lastPageValue}`
+
+    if(fromPage == lastPageRedirect) {
+        lastPageValue = null
+        sessionStorage.removeItem("lastPage")
+    }
     let token = sessionStorage.getItem('OAuthToken') || null
     let redirectToLastPageFlag
 
