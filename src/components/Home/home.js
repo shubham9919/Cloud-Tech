@@ -23,7 +23,11 @@ function Home(props) {
     }
 
     const history = useHistory();
-    
+
+    if(history.action.toLowerCase() === "pop") {
+        sessionStorage.removeItem("lastPage")
+    }
+
     let lastPageValue = sessionStorage.getItem('lastPage') || null
     let lastPageRedirect = `/article/${lastPageValue}`
     let token = sessionStorage.getItem('OAuthToken') || null
@@ -33,10 +37,6 @@ function Home(props) {
         redirectToLastPageFlag = true
     } else {
         redirectToLastPageFlag = false
-    }
-
-    if(history.action === "POP") {
-        sessionStorage.removeItem("lastPage")
     }
 
     if (redirectToLastPageFlag) {
