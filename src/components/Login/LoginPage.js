@@ -19,7 +19,6 @@ function LoginPage() {
             <div className="loginBoxComponent">
                 <LoginBox></LoginBox>
             </div>
-            <Footer></Footer>
         </React.Fragment>
     )
 }

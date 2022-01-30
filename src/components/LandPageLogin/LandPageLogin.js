@@ -10,7 +10,8 @@ function LandPageLogin() {
                     <p
                         style={{
                             fontSize: "3rem",
-                            color: "red"
+                            color: "red",
+                            marginTop: "2rem"
                         }}
                     >Log in!</p><br></br>
                     <p
