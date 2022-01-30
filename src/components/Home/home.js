@@ -18,11 +18,11 @@ function Home(props) {
         sessionStorage.setItem('OAuthRefreshToken', tokens[1].split('=')[1])
     }
 
-    let lastPage = `/article/${sessionStorage.getItem('lastPage')}` || null
+    let lastPageValue = sessionStorage.getItem('lastPage') || null
+    let lastPageRedirect = `/article/${lastPageValue}`
     let token = sessionStorage.getItem('OAuthToken') || null
     let redirectToLastPageFlag
-
-    if (token && lastPage) {
+    if (token && lastPageValue) {
         redirectToLastPageFlag = true
     } else {
         redirectToLastPageFlag = false
@@ -30,7 +30,7 @@ function Home(props) {
 
     if (redirectToLastPageFlag) {
         sessionStorage.removeItem('lastPage')
-        return <Redirect to={lastPage}></Redirect>
+        return <Redirect to={lastPageRedirect}></Redirect>
     } else {
         return (
             <React.Fragment>
