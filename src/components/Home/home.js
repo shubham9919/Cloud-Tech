@@ -26,7 +26,7 @@ function Home(props) {
     let lastPageValue = sessionStorage.getItem('lastPage') || null
     let lastPageRedirect = `/article/${lastPageValue}`
 
-    if(fromPage == lastPageRedirect) {
+    if(fromPage == lastPageRedirect && redirectToLastPage !== "true") {
         lastPageValue = null
         sessionStorage.removeItem("lastPage")
     }
