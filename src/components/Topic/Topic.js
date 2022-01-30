@@ -3,18 +3,16 @@ import '../../components-style/Topic.css'
 
 
 function Topic(Componentprops) {
-
-    //  console.log(JSON.stringify(Componentprops))
     const [isHover, setHover] = useState(false)
     const callCloudfetchApi = (e) => {
-        console.log("Clicked");
+        sessionStorage.setItem('lastPage', Componentprops.Topic_Props.Route)
     }
+
     return (
         <React.Fragment>
             <head>
                 <link rel="preconnect" href="https://fonts.googleapis.com"></link>
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
-
             </head>
             <a
                 onMouseOver={() => setHover(true)}
@@ -29,7 +27,6 @@ function Topic(Componentprops) {
                     </div>
                 </div>
             </a>
-            {/* </body> */}
         </React.Fragment>
     );
 }

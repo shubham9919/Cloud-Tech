@@ -1,5 +1,4 @@
 import React from "react";
-import { useParams } from "react-router";
 import '../../components-style/Paragraphtitle.css'
 
 function Paragraphtitle(params) {

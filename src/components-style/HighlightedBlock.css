@@ -1,5 +1,3 @@
-
-
 .Component-HighlightedBlock-boxshadow {     
     position: relative;
     border-left: 4px solid rgb(19, 19, 19);
@@ -14,8 +12,6 @@
     color: rgb(19, 19, 19);
     margin-top: 3%;
 }
-
-
 
 @media only screen and (max-width: 767px) {
     .Component-HighlightedBlock-boxshadow {

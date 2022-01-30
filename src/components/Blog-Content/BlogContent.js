@@ -9,6 +9,7 @@ import CodeBlock from "../Article-Page-Components/CodeBlock";
 import ArticleHeader from "../Article-Page-Components/ArticleHeader";
 import Footer from "../Footer/Footer";
 import HamburgerHeader from "../Hamburger-Header/HamburgerHeader";
+import Promotions from "../Promotions/Promotions";
 import { Redirect } from "react-router";
 import axios from "axios";
 import "../../components-style/BlogContent.css"
@@ -81,7 +82,6 @@ function BlogContent(componentProps) {
             }
         }
         return (
-
             <React.Fragment>
                 {/* <ArticleHeader></ArticleHeader> */}
                 <Header></Header>

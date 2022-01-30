@@ -1,0 +1,14 @@
+.LandPageLoginBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10rem;
+}
+
+
+.LandPageLoginDesc > img {
+    max-height: 100%;
+    max-width: 100%;
+}

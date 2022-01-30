@@ -1,84 +1,88 @@
-
-/* .LoginPage {
-    background-image:url(/src/img/Hero-Cover-Image.png);
-    background-repeat: no-repeat;
+/* .loginBoxComponent {
+    background-image: url(../img/stacked-peaks-haikei.svg);
     background-size: cover;
-    height: 90vh;
 } */
-.LoginPage-model {
-    background-image:url(/src/img/Hero-Cover-Image.png);
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    transition: 200ms ease-in-out;
-    border: 1px solid black;
-    border-radius: 10px;
-    z-index: 10;
-    background-color: white;
-    width: 500px;
-    max-width: 80%;
-}
 
-.LoginPage-img{
-    margin: 2rem 0;
-    width: 90%;
-    margin:10% 10% 10% 5%;
-    transition: .2s;
-    cursor: pointer;
-}
-
-.LoginPage-model-header {
-    padding: 10px, 15px;
+.login-main-body{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;   
+    justify-content: center;
     align-items: center;
+}
+
+.loginBox {
+    border-radius: 1rem;
+    margin: 6.5rem 2rem;
+    width: 40rem;
+    height: 40rem;
+    border: 1px green solid;
+    text-align: center;
+    background-color: #ececec;
+}
+
+.Login {
+    margin: 0 1.5rem;
+    margin-top: 1.7rem;
     border-bottom: 1px solid black;
-    padding: 10px 15px; 
+    color: black;
+    font-size: 3.5rem;
+    text-align: center;
 }
 
-
-.LoginPage-model-header .LoginPage-title {
-    font-size: 1.25rem;
-    font-weight: bold;
+#circle > img {
+    background: #f00;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+.socialIdentity {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.face > p {
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
 }
 
-.LoginPage-model-header .LoginPage-close-button {
+.Login p {
+    margin-bottom: 1.7rem;
+}
+
+.socialIdentity {
+    margin-top: 4rem;
     cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 1.25rem;
-    font-weight: bold;
-    padding: 10px 15px; 
-
 }
 
-.LoginPage-model-body {
-    padding: 10px 15px; 
+.loginProviderLogo {
+    width: 5rem;
+    height: 5rem;
+    margin-right: .4rem;
 }
 
-/* #overlay {
-    position: fixed;
-    opacity: 0;
-    transition: 200ms ease-in-out;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(243, 243, 243);
-    pointer-events: none;
+.LoginProvider {
+    height: 5rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: rgb(255, 57, 57);
 }
 
-#overlay.active {
-    pointer-events: all;
-    opacity: 0.7;
-    
-} */
+.LoginProvider > a {
+    line-height: 4.7rem;
+    margin: 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+}
 
-/* 
-.LoginPage-model.active{
-    transform: translate(-50%, -50%) scale(1);
-} */
-
-
+.loginProviderLogo > img {
+    max-width: 100%;
+    max-height: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}

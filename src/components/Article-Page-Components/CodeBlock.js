@@ -5,15 +5,13 @@ function CodeBlock(properties) {
     const base64Decoder = () => {
         return Buffer.from(properties.codeBlock, "base64").toString("utf8")
     }
-    // console.log(base64Decoder())
-    // let text = base64Decoder()
-    // console.log("params--->" + JSON.stringify(params))
+
     return (
         <React.Fragment>
             <body className="codeblock_component_body">
                 <div className="Component-CodeBlock-main">
                     <pre>
-                    {base64Decoder()}
+                        {base64Decoder()}
                     </pre>
                 </div>
             </body>

@@ -29,7 +29,6 @@ function ArticleParagraph(properties) {
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                     <link href="https://fonts.googleapis.com/css2?family=Domine&family=Lobster&family=Pacifico&family=Playfair+Display:wght@400;500&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet"></link>
                 </head>
-                {/* <Paragraphtitle paraTitle={params.paraHeader}></Paragraphtitle> */}
                 <div className="para_content" dangerouslySetInnerHTML={iframe()}>
                 </div>
             </React.Fragment>

@@ -1,6 +1,5 @@
 import React from 'react'
 import Topic from '../Topic/Topic'
-//  import data from '../../content/Home-Page-Content.json'
 import '../../components-style/Topic.css'
 import '../../components-style/LandPage.css'
 import Header from '../Header/Header'
@@ -25,14 +24,11 @@ function LandPage(params) {
         })
     }, [])
 
-    // console.log("params in LandPage ---> " + JSON.stringify(params))
     const FLAG = params.searchkeys ? true : false
     let newObjects = []
     if (FLAG && pageData != null) {
         for (const key of params.searchkeys) {
             for (const props of pageData.data) {
-                // console.log("props -->" + JSON.stringify(props))
-                // console.log("key -->" + JSON.stringify(key))
                 if (props.keys.includes(key.toLowerCase())) {
                     newObjects.push(props)
                 }

@@ -14,15 +14,12 @@ body{
 .about_me_starter {
     display: flex;
     margin: 0 1rem;
-    /* border: 1px solid red; */
-    /* height: 30rem; */
     flex-direction: row-reverse;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
 }
 .my_image {
-    /* margin: 3rem; */
     width: 40rem;
     margin-top: 3rem;
 }
@@ -41,10 +38,7 @@ body{
 }
 
 .my_name {
-    /* position: absolute; */
     font-family: 'Lobster', cursive;
-    /* top: 6%; */
-    /* left: 30%; */
     margin: 3rem;
     margin-top: 7rem;
     width: 50rem;
@@ -73,12 +67,7 @@ body{
     margin-left: 0.4rem;
     color: blue;
 }
-/* span {
-    font-family: 'Rubik', sans-serif;;
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-left: 50rem;
-} */
+
 @media only screen and (max-width: 998px) {
     html {
         font-size: 45%;

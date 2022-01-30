@@ -1,11 +1,8 @@
-
-
 .Component-HeroImageForArticle{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 5rem;
-        /* background-image: cover; */
 }
 
 .Component-HeroImageForArticle-picCourtesy {

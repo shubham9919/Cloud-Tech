@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%; /* 1rem is by default 16px we want 1rem to be 10px*/
+    box-sizing: border-box;
+    font-family: 'Rubik', Arial, sans-serif;
+}
+
+.component-Promotions-course {
+    margin: 1rem 0; 
+    text-align: justify;
+    width: 39rem;
+}
+
+.component-Promotions-tiles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    justify-content:center;
+    padding-top: 2rem;
+}
+.component-Promotions-promotions {
+    background-image: url(/src/img/flows.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    justify-content:center;
+}
+
+.component-Promotions-coursePic {
+    background-color: #fff;
+    height: 25rem;
+    text-align: center;
+    border-top: 3px solid green;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.component-Promotions-checkNow {
+    width: 8rem;
+    height: 3rem;
+    border: .1px solid rgb(196, 196, 196);
+    margin: 1rem 0;
+    margin-bottom: 0;
+    border-radius: 1rem;
+    text-align: left;
+}
+
+
+.component-Promotions-category {
+    margin: 1rem 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.component-Promotions-courseDec {
+    padding: 2rem;
+    background-color: #fff;
+    margin: .5rem 0;
+    width: 39rem;
+    min-height: 10rem;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.component-Promotions-courseDec p {
+    font-family:'Times New Roman', Times, serif;
+    line-height: 2.5rem;
+    font-size: 1.7rem;
+    color: black;
+    font-weight: 600;
+}
+
+
+
+
+.component-Promotions-cc {
+    color: red;
+    font-size: 1.5rem;
+
+}
+
+.component-Promotions-category > p {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: .65rem;
+}
+
+.component-Promotions-checkNow {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.component-Promotions-checkNow > a {
+    color: black;
+}
+
+.component-Promotions-category > p {
+    text-align: left;
+}
+
+.component-Promotions-category {
+    margin: 1rem 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.component-Promotions-coursePic> img {
+    padding: 1rem 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.component-Promotions-active, 
+.component-Promotions-first, 
+.component-Promotions-first > a, 
+.component-Promotions-active > a,
+#component-Promotions-Active,
+#component-Promotions-Active > a {
+    color: #fff;
+    background-color: rgb(0, 82, 75);
+    cursor: pointer;
+}
+
+.component-Promotions-category p {
+    font-size: 1.7rem;
+}

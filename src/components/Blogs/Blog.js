@@ -17,13 +17,10 @@ function Blog(props) {
             topicPage(response)
         })
     }, [])
+
     return (
         <React.Fragment>
-
-            {/* <div className="Component-blog"> */}
-            {!page ? <Loading></Loading>: <BlogContent properties={page}></BlogContent>}
-            {/* </div> */}
-
+            {!page ? <Loading></Loading> : <BlogContent properties={page}></BlogContent>}
         </React.Fragment>
     );
 }

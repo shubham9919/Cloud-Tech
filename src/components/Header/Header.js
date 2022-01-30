@@ -25,10 +25,10 @@ function Header() {
                 <div className="component-header-main-header">
 
                     <div className="component-header-header-start">
-                    <HeaderLogo></HeaderLogo>
+                        <HeaderLogo></HeaderLogo>
 
                         <div className="component-header-header-options">
-                            <ul>        
+                            <ul>
                                 {pathList}
                                 <a href="/" id="component-header-search-icon"><i className="fas fa-binoculars fa-lg"></i></a>
                             </ul>

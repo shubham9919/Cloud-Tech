@@ -6,7 +6,7 @@ function ArticleHeader(properties) {
         <React.Fragment>
             <div class="article_title">
                 <h3>
-                    {properties.articleName} 
+                    {properties.articleName}
                 </h3>
             </div>
         </React.Fragment>

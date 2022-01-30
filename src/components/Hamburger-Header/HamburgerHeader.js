@@ -19,15 +19,15 @@ function HamburgerHeader() {
                         <HeaderLogo></HeaderLogo>
                     </div>
                     <div className={`component-hamburger-hamburger-menu-content`}>
-                        <span className={`component-hamburger-hamburger-menu-symbol hm ${isClicked === true?"component-hamburger-side-nav-visible":""}`} onClick={() => setClicked(true)}><i className="fas fa-bars fa-10x"></i></span>
+                        <span className={`component-hamburger-hamburger-menu-symbol hm ${isClicked === true ? "component-hamburger-side-nav-visible" : ""}`} onClick={() => setClicked(true)}><i className="fas fa-bars fa-10x"></i></span>
                     </div>
                     <span id="outside"></span>
-                    <div className={`component-hamburger-hamburger-menu-show hm ${isClicked === true?"component-hamburger-side-nav-visible":""}`}>
-                        <div className={`component-hamburger-close-button hm ${isClicked === true?"component-hamburger-side-nav-visible":""}`}>
+                    <div className={`component-hamburger-hamburger-menu-show hm ${isClicked === true ? "component-hamburger-side-nav-visible" : ""}`}>
+                        <div className={`component-hamburger-close-button hm ${isClicked === true ? "component-hamburger-side-nav-visible" : ""}`}>
                             <span onClick={() => setClicked(false)}><i className="fas fa-times fa-5x"></i></span>
                         </div>
                         <div className="component-hamburger-hamburger-menu-opt">
-                            <ul className={`hm ${isClicked === true?"component-hamburger-side-nav-visible":"hidden"}`}>
+                            <ul className={`hm ${isClicked === true ? "component-hamburger-side-nav-visible" : "hidden"}`}>
                                 <li><a href="/"> Home </a></li>
                                 <li><a href="/shubham-chavan"> About Me </a></li>
                                 <li><a href="/login"> Sign In </a></li>

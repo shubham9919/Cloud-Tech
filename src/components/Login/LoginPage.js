@@ -1,35 +1,25 @@
 import React from "react";
 import '../../components-style/LoginPage.css'
-import ArticleHeader from "../Article-Page-Components/ArticleHeader";
+import Header from '../Header/Header.js'
+import LoginBox from "./LoginBox";
+import HamburgerHeader from '../Hamburger-Header/HamburgerHeader.js'
+import Footer from "../Footer/Footer";
+
 require('dotenv').config();
 
 const setLogin = () => {
-    window.open(process.env.REACT_APP_OAUTH_URL,"_self")
-    // axios.get(`http://localhost:5000/auth/google`).then((response) => {
-    //     console.log(response)
-    // })
+    window.open(process.env.REACT_APP_OAUTH_URL, "_self")
 }
 
 function LoginPage() {
     return (
         <React.Fragment>
-                <body>
-                <ArticleHeader></ArticleHeader>
-        <div className="LoginPage">
-        <div className = "LoginPage-model" id="LoginPage-model">
-            <div className="LoginPage-model-header">
-                <div className="LoginPage-title">Login</div>
-                <a href="/" className="LoginPage-close-button">&times;</a>
+            <HamburgerHeader></HamburgerHeader>
+            <Header></Header>
+            <div className="loginBoxComponent">
+                <LoginBox></LoginBox>
             </div>
-            <div className="model-body">
-                <a><img className="LoginPage-img"  onClick={setLogin} src="https://www.avrutti.com/images/google.png" alt=""></img></a>  
-            </div>
-        </div>
-        <div id="overlay"></div>
-        </div>
-
-    </body>
-
+            <Footer></Footer>
         </React.Fragment>
     )
 }

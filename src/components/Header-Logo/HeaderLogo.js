@@ -1,13 +1,12 @@
 import React from "react";
 import '../../components-style/HeaderLogo.css'
 
-function HeaderLogo(params) {
+function HeaderLogo() {
     return (
         <React.Fragment>
 
-            <div  className="Component-HeaderLogo-img">
-            <a href='/'><img src="/CloudSage.jpg"></img></a>
-            {/* <h2>CloudSage</h2> */}
+            <div className="Component-HeaderLogo-img">
+                <a href='/'><img src="/CloudSage.jpg"></img></a>
             </div>
         </React.Fragment>
     )

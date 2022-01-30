@@ -24,7 +24,6 @@
 .component-header-header-start {
     margin: auto 15%;
     display: flex;
-    /* flex-direction: row-reverse; */
     justify-content:space-between; 
 }
 
@@ -45,12 +44,6 @@
     margin-top: .5%;
 }
 
-/* img {
-    width:6vw;
-    -o-object-fit: contain;
-    object-fit: contain;
-} */
-
 .active{
     background-color: rgb(0, 82, 75);
     color: white !important;
@@ -70,7 +63,6 @@
 }
 
 
-
 #component-header-search-icon {
     margin-top: .5rem;
     color: black;
@@ -80,16 +72,16 @@
     html {
         font-size: 55%;
     }
-  }
+}
 
-  @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     html {
         font-size: 45%;
     }
-  }
+}
 
-  @media only screen and (max-width: 767px) { 
+@media only screen and (max-width: 767px) { 
     .header-body > *{
         display: none;
     }
-   }
+}
