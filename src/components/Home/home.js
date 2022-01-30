@@ -12,24 +12,24 @@ import { Redirect } from "react-router";
 
 
 function Home(props) {
-    let lastPage = `/article/${sessionStorage.getItem('lastPage')}`
-    let token = sessionStorage.getItem('OAuthToken') || null
-    let redirectToLastPageFlag
-    console.log(token)
-    console.log(lastPage)
-    if (token && lastPage) {
-        redirectToLastPageFlag = true
-    } else {
-        redirectToLastPageFlag = false
-    }
-    console.log(redirectToLastPageFlag)
     if (props && props.location && props.location.search) {
         let tokens = props.location.search.split('&')
         sessionStorage.setItem('OAuthToken', tokens[0].split('=')[1])
         sessionStorage.setItem('OAuthRefreshToken', tokens[1].split('=')[1])
     }
 
+    let lastPage = `/article/${sessionStorage.getItem('lastPage')}` || null
+    let token = sessionStorage.getItem('OAuthToken') || null
+    let redirectToLastPageFlag
+
+    if (token && lastPage) {
+        redirectToLastPageFlag = true
+    } else {
+        redirectToLastPageFlag = false
+    }
+
     if (redirectToLastPageFlag) {
+        sessionStorage.removeItem('lastPage')
         return <Redirect to={lastPage}></Redirect>
     } else {
         return (
