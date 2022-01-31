@@ -9,6 +9,7 @@ function LandPageLogin() {
                 <div className='LandPageLoginDesc'>
                     <p
                         style={{
+                            fontFamily: "Playfair Display",
                             fontSize: "3rem",
                             color: "red",
                             marginTop: "2rem"
@@ -16,12 +17,14 @@ function LandPageLogin() {
                     >Log in!</p><br></br>
                     <p
                         style={{
+                            fontFamily: "Playfair Display",
                             fontSize: "3rem",
                             color: "black"
                         }}
                     >Get The Access to some<br></br>of the premium articles on</p>
                     <p
                         style={{
+                            fontFamily: "Playfair Display",
                             fontSize: "3rem",
                             color: "blue"
                         }}
