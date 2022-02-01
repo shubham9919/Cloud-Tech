@@ -138,3 +138,13 @@
 .component-Promotions-category p {
     font-size: 1.7rem;
 }
+
+
+@media only screen and (max-width: 420px) {
+    html {
+        font-size: 45%;
+    }
+    .component-Promotions-course, .component-Promotions-courseDec {
+        width: 40rem;
+    }
+}

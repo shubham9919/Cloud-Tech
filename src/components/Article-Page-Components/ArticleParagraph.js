@@ -1,6 +1,14 @@
 import React from "react";
 import '../../components-style/ArticleParagraph.css'
 
+
+
+/**
+ *
+ * @description For article paragraphs.
+ * @param {*} properties
+ * @return {*} 
+ */
 function ArticleParagraph(properties) {
 
     const iframe = () => {

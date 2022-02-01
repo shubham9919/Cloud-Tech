@@ -11,6 +11,14 @@ import PromotionsTiles from "../Promotions/PromotionTiles";
 import LandPageLogin from "../LandPageLogin/LandPageLogin";
 import { Redirect } from "react-router";
 
+
+
+/**
+ *
+ * @description Wrapper component for land page.
+ * @param {*} props
+ * @return {*} 
+ */
 function Home(props) {
     if (props && props.location && props.location.search) {
         let tokens = props.location.search.split('&')

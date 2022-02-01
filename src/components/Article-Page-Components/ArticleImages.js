@@ -6,7 +6,7 @@ function AricleImage(properties) {
     return (
         <React.Fragment>
             <div className="article_pic">
-                <img src={properties.articleImage} alt="" />
+                <img src={properties.articleImage} alt="articleImage" />
             </div>
         </React.Fragment>
     )

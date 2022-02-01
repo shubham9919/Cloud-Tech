@@ -15,14 +15,13 @@ import axios from "axios";
 import "../../components-style/BlogContent.css"
 require('dotenv').config();
 
+
 /**
  * @todo PASS HIGHLIGHTED TEXT IN THE HIGHLIGHTED COMPONENT
  *
  * @param {*} componentProps
  * @return {*} 
  */
-
-
 function BlogContent(componentProps) {
 
     const [isDataFetched, dataFetchedupdate] = useState(null)

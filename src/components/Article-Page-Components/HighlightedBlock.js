@@ -2,6 +2,14 @@ import React from "react";
 import '../../components-style/HighlightedBlock.css'
 import Paragraphtitle from "./ParagraphTitle";
 
+
+/**
+ *
+ * @description Component to highlight a paragraph.
+ * @deprecated
+ * @param {*} params
+ * @return {*} 
+ */
 function HighlightedBlock(params) {
 
     const iframe = () => {

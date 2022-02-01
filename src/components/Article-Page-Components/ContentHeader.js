@@ -2,6 +2,12 @@ import React from 'react'
 import '../../components-style/ContentHeader.css'
 
 
+/**
+ *
+ * @description Function for the component of blog title.
+ * @param {*} properties
+ * @return {*} 
+ */
 function ContentHeader(properties) {
     return (
         <React.Fragment>

@@ -5,6 +5,12 @@ import Axios from 'axios'
 import Promotions from './Promotions'
 import Loading from '../Loading/Loading'
 
+
+/**
+ *
+ * @description Wrapper for promotions component.
+ * @return {*} 
+ */
 function PromotionsTiles() {
     const [promotionData, promotionsDataLoaded] = useState(null)
 

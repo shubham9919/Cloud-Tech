@@ -11,6 +11,12 @@ const setLogin = () => {
     window.open(process.env.REACT_APP_OAUTH_URL, "_self")
 }
 
+
+/**
+ *
+ * @description Login Component.
+ * @return {*} 
+ */
 function LoginPage() {
     return (
         <React.Fragment>

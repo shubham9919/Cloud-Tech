@@ -1,6 +1,16 @@
 import React, { useState } from "react"
 import "../../components-style/Footer.css"
 
+
+
+/**
+ *
+ * @description Footer Component. 
+ * @todo 
+ *      topic wise routes 
+ *      affiliate external urls
+ * @return {*} 
+ */
 function Footer() {
     // const [isHover, setHover] = useState(-1)
     // let topics = ["Lambda", "EBS"]
@@ -47,7 +57,7 @@ function Footer() {
                     </div>
                     <div className="Component-Footer-copyrights">
 
-                        <h3> &nbsp; &copy; 2021 Copyrights CloudSage</h3>
+                        <h3> &nbsp; &copy; 2021 Copyrights BlindOnCloud</h3>
                     </div>
 
                 </div>

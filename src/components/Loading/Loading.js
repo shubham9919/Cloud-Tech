@@ -1,6 +1,12 @@
 import React from "react";
 import '../../components-style/Loading.css'
 
+
+/**
+ *
+ * @description Loading GIF component.
+ * @return {*} 
+ */
 function Loading() {
     return (
         <React.Fragment>

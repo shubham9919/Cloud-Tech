@@ -1,6 +1,13 @@
 import React from "react";
 import '../../components-style/CodeBlock.css'
 
+
+/**
+ *
+ * @description For code blocks in articles
+ * @param {*} properties
+ * @return {*} 
+ */
 function CodeBlock(properties) {
     const base64Decoder = () => {
         return Buffer.from(properties.codeBlock, "base64").toString("utf8")

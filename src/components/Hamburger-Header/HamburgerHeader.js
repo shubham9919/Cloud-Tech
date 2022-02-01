@@ -3,6 +3,11 @@ import '../../components-style/HamburgerHeader.css'
 import HeaderLogo from '../Header-Logo/HeaderLogo'
 
 
+/**
+ *
+ * @description Component for HamburgerHeader (Mobile view only).
+ * @return {*} 
+ */
 function HamburgerHeader() {
     const [isClicked, setClicked] = useState(false);
     return (

@@ -1,6 +1,13 @@
 import React from 'react'
 import '../../components-style/HomePageCover.css'
 
+
+
+/**
+ *
+ * @description Land page quote component.
+ * @return {*} 
+ */
 function HomePageCover() {
     return (
         <React.Fragment>

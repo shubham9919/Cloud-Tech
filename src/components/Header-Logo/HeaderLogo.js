@@ -1,12 +1,18 @@
 import React from "react";
 import '../../components-style/HeaderLogo.css'
 
+
+/**
+ *
+ * @description site Logo component
+ * @return {*} 
+ */
 function HeaderLogo() {
     return (
         <React.Fragment>
 
             <div className="Component-HeaderLogo-img">
-                <a href='/'><img src="/CloudSage.jpg"></img></a>
+                <a href='/'><img src="/boc.jpg"></img></a>
             </div>
         </React.Fragment>
     )

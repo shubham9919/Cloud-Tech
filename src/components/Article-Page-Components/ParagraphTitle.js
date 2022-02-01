@@ -1,6 +1,13 @@
 import React from "react";
 import '../../components-style/Paragraphtitle.css'
 
+
+/**
+ *
+ *
+ * @param {*} params
+ * @return {*} 
+ */
 function Paragraphtitle(params) {
     const highlighted = () => {
         if (!params.isHighlighted) {

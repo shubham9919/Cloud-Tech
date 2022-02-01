@@ -1,6 +1,13 @@
 import React, { useState } from 'react'
 import '../../components-style/Promotions.css'
 
+
+/**
+ *
+ * @description Affiliate promotions component.
+ * @param {*} promotionParams
+ * @return {*} 
+ */
 function Promotions(promotionParams) {
     const [isHover, setHover] = useState(false)
     return (

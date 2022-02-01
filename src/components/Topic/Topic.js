@@ -2,6 +2,12 @@ import React, { useState } from 'react'
 import '../../components-style/Topic.css'
 
 
+/**
+ *
+ * @description Topic tiles component on landpage.
+ * @param {*} Componentprops
+ * @return {*} 
+ */
 function Topic(Componentprops) {
     const [isHover, setHover] = useState(false)
     const callCloudfetchApi = (e) => {

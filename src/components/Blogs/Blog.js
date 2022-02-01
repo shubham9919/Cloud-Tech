@@ -5,8 +5,14 @@ import BlogContent from "../Blog-Content/BlogContent"
 import Loading from "../Loading/Loading"
 
 
-//https://www.pragimtech.com/blog/reactjs/routing-part-4-in-react/
 
+
+/**
+ * @description Wrapper component for blogs.
+ * @readonly https://www.pragimtech.com/blog/reactjs/routing-part-4-in-react/
+ * @param {*} props
+ * @return {*} 
+ */
 function Blog(props) {
 
     const state = useState()

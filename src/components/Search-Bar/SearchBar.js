@@ -3,6 +3,12 @@ import "../../components-style/SearchBar.css"
 
 //https://www.mikedane.com/web-development/css/styling-search-bar/
 
+
+/**
+ *
+ *
+ * @return {*} 
+ */
 function SearchBar() {
     return (
         <React.Fragment>

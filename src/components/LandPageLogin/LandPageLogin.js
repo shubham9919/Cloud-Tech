@@ -2,6 +2,13 @@ import React from 'react'
 import LoginBox from '../Login/LoginBox'
 import '../../components-style/LandPageLogin.css'
 
+
+
+/**
+ *
+ * @description Login component on landpage
+ * @return {*} 
+ */
 function LandPageLogin() {
     return (
         <React.Fragment>
@@ -28,7 +35,7 @@ function LandPageLogin() {
                             fontSize: "3rem",
                             color: "blue"
                         }}
-                    >CloudSage.</p>
+                    >BlindOnCloud.</p>
                 </div>
                 <div className='LandPageLoginLogin'>
                     <LoginBox></LoginBox>

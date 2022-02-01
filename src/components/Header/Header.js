@@ -1,7 +1,20 @@
 import React, { useState } from 'react'
-import HeaderLogo from '../Header-Logo/HeaderLogo'
+import HeaderLogo from '../Header-Logo/HeaderLogo.js'
+import Loading from '../Loading/Loading.js'
 import '../../components-style/Header.css'
 
+
+
+
+/**
+ *
+ * @description Component for Header of website
+ * @return {*} 
+ */
+
+ function myPOC(){
+    return <Loading></Loading>
+ }
 function Header() {
     const [isHover, setHover] = useState(-1)
     const paths = ["/", "/shubham-chavan", "/login"]
@@ -30,7 +43,9 @@ function Header() {
                         <div className="component-header-header-options">
                             <ul>
                                 {pathList}
-                                <a href="/" id="component-header-search-icon"><i className="fas fa-binoculars fa-lg"></i></a>
+                                <a 
+                                onClick={myPOC()}
+                                href="/" id="component-header-search-icon"><i className="fas fa-binoculars fa-lg"></i></a>
                             </ul>
                         </div>
                     </div>
