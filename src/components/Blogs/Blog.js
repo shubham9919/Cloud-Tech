@@ -3,7 +3,10 @@ import React from "react"
 import Axios from 'axios'
 import BlogContent from "../Blog-Content/BlogContent"
 import Loading from "../Loading/Loading"
+import ReactGA from "react-ga"
+import { withRouter } from "react-router-dom/cjs/react-router-dom.min";
 
+ReactGA.initialize(process.env.REACT_APP_GOOOGLE_ANALYTICS_MEASUREMENT_ID)
 
 
 
@@ -18,6 +21,7 @@ function Blog(props) {
     const state = useState()
     const [page, topicPage] = useState(null)
     useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
         Axios.get(`https://of8wybu5c3.execute-api.ap-south-1.amazonaws.com/dev/cloud-tech-fetch?topic=${props.articleName || props.match.params.topic}`).then((response) => {
             topicPage(response)
         })
@@ -30,4 +34,4 @@ function Blog(props) {
     );
 }
 
-export default Blog
+export default withRouter(Blog)

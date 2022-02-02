@@ -1,15 +1,20 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import '../../components-style/AboutUs.css';
 import '../../components-style/Grid.css'
 import '../../components-style/normalize.css'
 import HamburgerHeader from '../Hamburger-Header/HamburgerHeader.js'
 import Header from '../Header/Header.js'
 import Footer from '../Footer/Footer.js'
+import ReactGA from "react-ga"
+import { withRouter } from "react-router-dom/cjs/react-router-dom.min";
 
+ReactGA.initialize(process.env.REACT_APP_GOOOGLE_ANALYTICS_MEASUREMENT_ID)
 
 
 function AboutUs() {
-
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    })
     return (
         <React.Fragment>
             <head>
@@ -124,7 +129,7 @@ function AboutUs() {
 
 ////<h2>Not Auth</h2>
 
-export default AboutUs
+export default withRouter(AboutUs) 
 
 
 

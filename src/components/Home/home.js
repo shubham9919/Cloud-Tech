@@ -10,7 +10,10 @@ import HomePageCover from "../HomePageCover/HomePageCover.js";
 import PromotionsTiles from "../Promotions/PromotionTiles";
 import LandPageLogin from "../LandPageLogin/LandPageLogin";
 import { Redirect } from "react-router";
+import ReactGA from "react-ga"
+import { withRouter } from "react-router-dom/cjs/react-router-dom.min";
 
+ReactGA.initialize(process.env.REACT_APP_GOOOGLE_ANALYTICS_MEASUREMENT_ID)
 
 
 /**
@@ -19,7 +22,9 @@ import { Redirect } from "react-router";
  * @param {*} props
  * @return {*} 
  */
-function Home(props) {
+
+
+function Home(props) {    
     if (props && props.location && props.location.search) {
         let tokens = props.location.search.split('&')
         sessionStorage.setItem('OAuthToken', tokens[0].split('=')[1])
@@ -47,6 +52,10 @@ function Home(props) {
         redirectToLastPageFlag = false
     }
 
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    })
+    
     if (redirectToLastPageFlag) {
         sessionStorage.removeItem('lastPage')
         sessionStorage.removeItem('redirectToLastPage')
@@ -68,4 +77,4 @@ function Home(props) {
 
 }
 
-export default Home
+export default withRouter(Home)
