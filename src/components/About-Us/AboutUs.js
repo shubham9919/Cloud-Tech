@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react'
+import { Helmet } from 'react-helmet'
 import '../../components-style/AboutUs.css';
 import '../../components-style/Grid.css'
 import '../../components-style/normalize.css'
@@ -17,7 +18,7 @@ function AboutUs() {
     }, [])
     return (
         <React.Fragment>
-            <head>
+            <Helmet>
                 <meta charset='utf-8' />
                 <meta http-equiv='X-UA-Compatible' content='IE=edge' />
                 <title>Page Title</title>
@@ -30,8 +31,9 @@ function AboutUs() {
                     rel="stylesheet" />
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
                     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
-            </head>
-            <body>
+            
+            </Helmet>
+            <div className='aboutus-body'>
                 <Header></Header>
                 <HamburgerHeader></HamburgerHeader>
                 <div className="about_me_starter">
@@ -121,7 +123,7 @@ function AboutUs() {
                     </div>
                 </div>
                 <Footer></Footer>
-            </body>
+            </div>
 
         </React.Fragment>
     );

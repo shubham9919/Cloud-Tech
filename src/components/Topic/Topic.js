@@ -16,10 +16,6 @@ function Topic(Componentprops) {
 
     return (
         <React.Fragment>
-            <head>
-                <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
-            </head>
             <a
                 onMouseOver={() => setHover(true)}
                 onMouseLeave={() => setHover(false)}

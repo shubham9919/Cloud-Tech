@@ -13,6 +13,7 @@ import HamburgerHeader from "../Hamburger-Header/HamburgerHeader";
 import { Redirect } from "react-router";
 import axios from "axios";
 import "../../components-style/BlogContent.css"
+import { Helmet } from "react-helmet";
 require('dotenv').config();
 
 
@@ -86,6 +87,20 @@ function BlogContent(componentProps) {
         }
         return (
             <React.Fragment>
+
+                <Helmet>
+                <meta charSet="utf-8"/>
+                    <title>{componentInputs.title}</title>
+                    <link rel="canonical" href={`http://blindoncloud.com${history.location.pathname}`}/>
+                    <meta name="description" content={componentInputs.description}/>
+                    <meta name="keywords" content={componentInputs.keyWords}/>
+                    <meta property="og:locale" content="en_US"/>
+                    <meta property="og:title" content={componentInputs.title}/>
+                    <meta property="og:description" content={componentInputs.description}/>
+                    <meta property="og:url" content={`http://blindoncloud.com${history.location.pathname}`}/>
+                    <meta property="og:site_name" content="blindoncloud.com"/>
+                </Helmet>
+                
                 {/* <ArticleHeader></ArticleHeader> */}
                 <Header></Header>
                 <HamburgerHeader></HamburgerHeader>

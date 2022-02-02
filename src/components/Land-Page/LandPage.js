@@ -47,11 +47,11 @@ function LandPage(params) {
     } else {
         return (
             <React.Fragment>
-                <body className='Component-Topic-body'>
+                <div className='Component-Topic-body'>
                     <div className="Component-Topic-cards">
                         {!pageData ? <Loading></Loading> : pageData.data.map(item => <Topic key={item} Topic_Props={item} />)}
                     </div>
-                </body>
+                </div>
             </React.Fragment>
         )
     }

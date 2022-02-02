@@ -4,7 +4,8 @@
     font-size: 62.5%; /* 1rem is by default 16px we want 1rem to be 10px*/
     box-sizing: border-box;
 }
-body{
+
+.aboutus-body {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;

@@ -12,6 +12,7 @@ import LandPageLogin from "../LandPageLogin/LandPageLogin";
 import { Redirect } from "react-router";
 import ReactGA from "react-ga"
 import { withRouter } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 
 /**
@@ -61,7 +62,14 @@ function Home(props) {
         return <Redirect to={lastPageRedirect}></Redirect>
     } else {
         return (
+
             <React.Fragment>
+                <Helmet>
+                    <meta charSet="utf-8"/>
+                    <title>Home - blindoncloud.com</title>
+                    <link rel="canonical" href="http://blindoncloud.com/"/>
+                    <meta name="description" content="Home page to get access to all the latest articles on cloud technology." />
+                </Helmet>
                 <HamburgerHeader></HamburgerHeader>
                 <Header></Header>
                 <HomePageCover></HomePageCover>

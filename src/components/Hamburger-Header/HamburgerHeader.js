@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from 'react-helmet'
 import '../../components-style/HamburgerHeader.css'
 import HeaderLogo from '../Header-Logo/HeaderLogo'
 
@@ -12,13 +13,11 @@ function HamburgerHeader() {
     const [isClicked, setClicked] = useState(false);
     return (
         <React.Fragment>
-            <head>
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+            <Helmet>
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
                     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossOrigin="anonymous" />
-            </head>
-            <body className="component-hamburger-hamburger-header-body">
+            </Helmet>
+            <div className="component-hamburger-hamburger-header-body">
                 <div className="component-hamburger-hamburger-menu">
                     <div className="component-hamburger-hamburger-menu-website-logo">
                         <HeaderLogo></HeaderLogo>
@@ -40,7 +39,7 @@ function HamburgerHeader() {
                         </div>
                     </div>
                 </div>
-            </body>
+            </div>
         </React.Fragment>
     )
 }

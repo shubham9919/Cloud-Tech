@@ -6,5 +6,11 @@
 <url> <loc>https://www.blindoncloud.com/user/:oauthid</loc> </url>
 <url> <loc>https://www.blindoncloud.com/</loc> </url>
 <url> <loc>https://www.blindoncloud.com/shubham-chavan</loc> </url>
-<url> <loc>https://www.blindoncloud.com/article/:topic</loc> </url>
+<url> <loc>https://www.blindoncloud.com/article/s3-get</loc> </url>
+<url> <loc>https://www.blindoncloud.com/article/s3-presigned-get</loc> </url>
+<url> <loc>https://www.blindoncloud.com/article/s3-presigned-upload</loc> </url>
+<url> <loc>https://www.blindoncloud.com/article/s3-vpc-endpoint</loc> </url>
+<url> <loc>https://www.blindoncloud.com/article/vpc-subnet-internetgateway</loc> </url>
+<url> <loc>https://www.blindoncloud.com/article/nat-gateways</loc> </url>
+<url> <loc>https://www.blindoncloud.com/article/mosquitto-ec2-iot-integration</loc> </url>
 </urlset>

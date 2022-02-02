@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import '../../components-style/HomePageCover.css'
 
 
@@ -11,12 +12,12 @@ import '../../components-style/HomePageCover.css'
 function HomePageCover() {
     return (
         <React.Fragment>
-            <head>
+            <Helmet>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet" />
-            </head>
-            <body className='component-homepage-cover-body'>
+            </Helmet>
+            <div className='component-homepage-cover-body'>
                 <div className='component-homepage-cover-backgoud'>
                     <div className="component-homepage-cover-intro-text">
                         <p style={{ fontFamily: "Playfair Display, serif" }}>
@@ -28,7 +29,7 @@ function HomePageCover() {
                 <div className='blogPosts'>
                     <h2>Blog Posts</h2>
                 </div>
-            </body>
+            </div>
         </React.Fragment>
     )
 }
