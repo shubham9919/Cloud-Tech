@@ -9,7 +9,6 @@ import { withRouter } from "react-router-dom";
 
 require('dotenv').config();
 
-ReactGA.initialize(process.env.REACT_APP_GOOOGLE_ANALYTICS_MEASUREMENT_ID)
 
 const setLogin = () => {
     window.open(process.env.REACT_APP_OAUTH_URL, "_self")
@@ -23,8 +22,9 @@ const setLogin = () => {
  */
 function LoginPage() {
     useEffect(() => {
+        ReactGA.initialize(process.env.REACT_APP_GOOOGLE_ANALYTICS_MEASUREMENT_ID)
         ReactGA.pageview(window.location.pathname + window.location.search);
-    })
+    }, [])
     return (
         <React.Fragment>
             <HamburgerHeader></HamburgerHeader>

@@ -8,13 +8,13 @@ import Footer from '../Footer/Footer.js'
 import ReactGA from "react-ga"
 import { withRouter } from "react-router-dom";
 
-ReactGA.initialize(process.env.REACT_APP_GOOOGLE_ANALYTICS_MEASUREMENT_ID)
 
 
 function AboutUs() {
     useEffect(() => {
+        ReactGA.initialize(process.env.REACT_APP_GOOOGLE_ANALYTICS_MEASUREMENT_ID)
         ReactGA.pageview(window.location.pathname + window.location.search);
-    })
+    }, [])
     return (
         <React.Fragment>
             <head>

@@ -13,8 +13,6 @@ import { Redirect } from "react-router";
 import ReactGA from "react-ga"
 import { withRouter } from "react-router-dom";
 
-ReactGA.initialize(process.env.REACT_APP_GOOOGLE_ANALYTICS_MEASUREMENT_ID)
-console.log(process.env.REACT_APP_GOOOGLE_ANALYTICS_MEASUREMENT_ID)
 
 /**
  *
@@ -53,8 +51,9 @@ function Home(props) {
     }
 
     useEffect(() => {
+        ReactGA.initialize(process.env.REACT_APP_GOOOGLE_ANALYTICS_MEASUREMENT_ID)
         ReactGA.pageview(window.location.pathname + window.location.search);
-    })
+    }, [])
     
     if (redirectToLastPageFlag) {
         sessionStorage.removeItem('lastPage')

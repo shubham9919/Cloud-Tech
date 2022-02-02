@@ -6,7 +6,6 @@ import Loading from "../Loading/Loading"
 import ReactGA from "react-ga"
 import { withRouter } from "react-router-dom";
 
-ReactGA.initialize(process.env.REACT_APP_GOOOGLE_ANALYTICS_MEASUREMENT_ID)
 
 
 
@@ -21,6 +20,7 @@ function Blog(props) {
     const state = useState()
     const [page, topicPage] = useState(null)
     useEffect(() => {
+        ReactGA.initialize(process.env.REACT_APP_GOOOGLE_ANALYTICS_MEASUREMENT_ID)
         ReactGA.pageview(window.location.pathname + window.location.search);
         Axios.get(`https://of8wybu5c3.execute-api.ap-south-1.amazonaws.com/dev/cloud-tech-fetch?topic=${props.articleName || props.match.params.topic}`).then((response) => {
             topicPage(response)
