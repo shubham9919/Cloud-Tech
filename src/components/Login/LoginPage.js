@@ -5,7 +5,7 @@ import LoginBox from "./LoginBox";
 import HamburgerHeader from '../Hamburger-Header/HamburgerHeader.js'
 import Footer from "../Footer/Footer";
 import ReactGA from "react-ga"
-import { withRouter } from "react-router-dom/cjs/react-router-dom.min";
+import { withRouter } from "react-router-dom";
 
 require('dotenv').config();
 

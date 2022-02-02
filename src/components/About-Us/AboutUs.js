@@ -6,7 +6,7 @@ import HamburgerHeader from '../Hamburger-Header/HamburgerHeader.js'
 import Header from '../Header/Header.js'
 import Footer from '../Footer/Footer.js'
 import ReactGA from "react-ga"
-import { withRouter } from "react-router-dom/cjs/react-router-dom.min";
+import { withRouter } from "react-router-dom";
 
 ReactGA.initialize(process.env.REACT_APP_GOOOGLE_ANALYTICS_MEASUREMENT_ID)
 
