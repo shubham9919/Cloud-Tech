@@ -89,18 +89,23 @@ function BlogContent(componentProps) {
             <React.Fragment>
 
                 <Helmet>
-                <meta charSet="utf-8"/>
+                    <meta charSet="utf-8" />
                     <title>{componentInputs.title}</title>
-                    <link rel="canonical" href={`http://blindoncloud.com${history.location.pathname}`}/>
-                    <meta name="description" content={componentInputs.description}/>
-                    <meta name="keywords" content={componentInputs.keyWords}/>
-                    <meta property="og:locale" content="en_US"/>
-                    <meta property="og:title" content={componentInputs.title}/>
-                    <meta property="og:description" content={componentInputs.description}/>
-                    <meta property="og:url" content={`http://blindoncloud.com${history.location.pathname}`}/>
-                    <meta property="og:site_name" content="blindoncloud.com"/>
+                    <link rel="canonical" href={`http://blindoncloud.com${history.location.pathname}`} />
+                    <meta name="description" content={componentInputs.description} />
+                    <meta name="keywords" content={componentInputs.keyWords} />
+                    <meta property="og:locale" content="en_US" />
+                    <meta property="og:title" content={componentInputs.title} />
+                    <meta property="og:description" content={componentInputs.description} />
+                    <meta property="og:url" content={`http://blindoncloud.com${history.location.pathname}`} />
+                    <meta property="og:site_name" content="blindoncloud.com" />
+                    {/* <meta property="og:image:secure_url" content="https://codelikedude.com/wp-content/uploads/2021/07/ternary-operator-min-1_11zon.jpg" />
+                    <meta property="og:image:width" content="640" />
+                    <meta property="og:image:height" content="360" />
+                    <meta property="og:image:alt" content="Ternary Operator in Java – An If Else Alternative" />
+                    <meta property="og:image:type" content="image/jpeg"></meta> */}
                 </Helmet>
-                
+
                 {/* <ArticleHeader></ArticleHeader> */}
                 <Header></Header>
                 <HamburgerHeader></HamburgerHeader>
@@ -112,7 +117,7 @@ function BlogContent(componentProps) {
                     </div>
                 </div>
                 <Footer></Footer>
-                {sessionStorage.setItem("fromPage",history.location.pathname)}
+                {sessionStorage.setItem("fromPage", history.location.pathname)}
             </React.Fragment>
         )
     }

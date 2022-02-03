@@ -10,7 +10,7 @@ import '../../components-style/logo.css'
  */
 function Logo(properties) {
     return (
-        <img src={`/logo/${properties.logo}`} className="Component-logo-logo "></img>
+        <img src={`/logo/${properties.logo}`} className="Component-logo-logo"></img>
     )
 }
 

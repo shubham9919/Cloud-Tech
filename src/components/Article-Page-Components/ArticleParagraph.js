@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import '../../components-style/ArticleParagraph.css'
 
 
@@ -32,11 +33,11 @@ function ArticleParagraph(properties) {
     } else {
         return (
             <React.Fragment>
-                <head>
+                <Helmet>
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                     <link href="https://fonts.googleapis.com/css2?family=Domine&family=Lobster&family=Pacifico&family=Playfair+Display:wght@400;500&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet"></link>
-                </head>
+                </Helmet>
                 <div className="para_content" dangerouslySetInnerHTML={iframe()}>
                 </div>
             </React.Fragment>

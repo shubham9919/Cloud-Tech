@@ -23,7 +23,7 @@ import { Helmet } from "react-helmet";
  */
 
 
-function Home(props) {    
+function Home(props) {
     if (props && props.location && props.location.search) {
         let tokens = props.location.search.split('&')
         sessionStorage.setItem('OAuthToken', tokens[0].split('=')[1])
@@ -31,14 +31,14 @@ function Home(props) {
     }
 
     const history = useHistory();
-    
+
     let fromPage = sessionStorage.getItem("fromPage")
     let redirectToLastPage = sessionStorage.getItem("redirectToLastPage")
 
     let lastPageValue = sessionStorage.getItem('lastPage') || null
     let lastPageRedirect = `/article/${lastPageValue}`
 
-    if(fromPage == lastPageRedirect && redirectToLastPage !== "true") {
+    if (fromPage == lastPageRedirect && redirectToLastPage !== "true") {
         lastPageValue = null
         sessionStorage.removeItem("lastPage")
     }
@@ -55,7 +55,7 @@ function Home(props) {
         ReactGA.initialize(process.env.REACT_APP_GOOOGLE_ANALYTICS_MEASUREMENT_ID)
         ReactGA.pageview(window.location.pathname + window.location.search);
     }, [])
-    
+
     if (redirectToLastPageFlag) {
         sessionStorage.removeItem('lastPage')
         sessionStorage.removeItem('redirectToLastPage')
@@ -65,10 +65,20 @@ function Home(props) {
 
             <React.Fragment>
                 <Helmet>
-                    <meta charSet="utf-8"/>
+                    <meta charSet="utf-8" />
                     <title>Home - blindoncloud.com</title>
-                    <link rel="canonical" href="http://blindoncloud.com/"/>
-                    <meta name="description" content="Home page to get access to all the latest articles on cloud technology." />
+                    <link rel="canonical" href="https://www.blindoncloud.com/" />
+                    <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+                    <meta property="og:locale" content="en_US" />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:title" content="Home - blindoncloud.com" />
+                    <meta property="og:description" content="The BlindOnCloud talks about practical implementation and integration of various cloud services with real world problems." />
+                    <meta property="og:url" content="https://blindoncloud.com/" />
+                    <meta property="og:site_name" content="blindoncloud.com" />
+                    <meta
+                        name="description"
+                        content="The BlindOnCloud talks about practical implementation and integration of various cloud services of AWS with real world problems."
+                    />
                 </Helmet>
                 <HamburgerHeader></HamburgerHeader>
                 <Header></Header>

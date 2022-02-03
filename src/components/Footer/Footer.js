@@ -28,7 +28,7 @@ function Footer() {
 
     return (
         <React.Fragment>
-            <body className="Component-Footer-body">
+            <div className="Component-Footer-body">
                 <div className="Component-Footer-my_footer">
                     {/* <div className="Component-Footer-my_footer_topics">
                         <div className="Component-Footer-topic">
@@ -56,12 +56,11 @@ function Footer() {
                         </div>
                     </div>
                     <div className="Component-Footer-copyrights">
-
                         <h3> &nbsp; &copy; 2021 Copyrights BlindOnCloud</h3>
                     </div>
 
                 </div>
-            </body>
+            </div>
         </React.Fragment>
     )
 }
