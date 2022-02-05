@@ -1,6 +1,5 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {
-  BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -10,6 +9,8 @@ import Home from './components/Home/home';
 import Blog from './components/Blogs/Blog';
 import LoadSearchResultMatch from './components/Search-Bar/LoadSearchResultMatch';
 import LoginPage from './components/Login/LoginPage';
+import privacyPolicy from './components/Privacy-Policy/PrivacyPolicy.js'
+import Disclaimer from "./components/Disclaimer/Disclaimer.js"
 require('dotenv').config();
 //https://stackoverflow.com/questions/40714583/how-to-specify-a-port-to-run-a-create-react-app-based-project/48669909#48669909
 
@@ -27,6 +28,9 @@ class App extends React.Component  {
         <Route exact path="/" component={Home} />
         <Route exact path="/shubham-chavan" component={AboutUs} />
         <Route exact path="/article/:topic" component={Blog} />
+        <Route exact path="/privacypolicy" component={privacyPolicy}/>
+        <Route exact path="/disclaimer" component={Disclaimer}/>
+
       </Switch>
     );
   }

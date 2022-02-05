@@ -28,7 +28,7 @@ function Promotions(promotionParams) {
                         onMouseOver={() => setHover(true)}
                         onMouseLeave={() => setHover(false)}
                         className={`component-Promotions-checkNow ${promotionParams.advProps.isActive ? "component-Promotions-first" : ""}`} id={isHover ? "component-Promotions-Active" : ""}>
-                        <a href='/'>Visit</a>
+                        <a href={promotionParams.advProps.link} target="_blank">Visit</a>
                     </div>
                 </div>
             </div>

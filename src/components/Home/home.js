@@ -1,18 +1,19 @@
 import React, { useEffect } from "react";
+import { Redirect } from "react-router";
+import ReactGA from "react-ga"
+import { withRouter } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { useHistory } from "react-router-dom";
-
 import Header from "../Header/Header";
 import LandPage from "../Land-Page/LandPage";
-import '../../components-style/normalize.css'
 import Footer from "../Footer/Footer";
 import HamburgerHeader from "../Hamburger-Header/HamburgerHeader";
 import HomePageCover from "../HomePageCover/HomePageCover.js";
 import PromotionsTiles from "../Promotions/PromotionTiles";
 import LandPageLogin from "../LandPageLogin/LandPageLogin";
-import { Redirect } from "react-router";
-import ReactGA from "react-ga"
-import { withRouter } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import '../../components-style/normalize.css';
+
+
 
 
 /**

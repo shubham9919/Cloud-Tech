@@ -22,7 +22,7 @@ function LoginBox() {
                             <p>Login</p>
                         </div>
                         <div className="face" id="circle">
-                            <img src="https://assets.codepen.io/11907/internal/avatars/users/default.png?fit=crop&format=auto&height=256&version=1638394425&width=256"></img>
+                            <img src="https://assets.codepen.io/11907/internal/avatars/users/default.png?fit=crop&format=auto&height=256&version=1638394425&width=256" alt="RandomFace"></img>
                             <p>
                                 Welcome! Login With
                             </p>

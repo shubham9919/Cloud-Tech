@@ -11,7 +11,7 @@ function Loading() {
     return (
         <React.Fragment>
             <div className="Component-Loading">
-                <img src='/LoadingGif.gif'></img>
+                <img src='/LoadingGif.gif' alt="Loading..."></img>
             </div>
         </React.Fragment>
     )

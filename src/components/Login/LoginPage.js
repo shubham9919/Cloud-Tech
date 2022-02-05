@@ -1,19 +1,12 @@
 import React, {useEffect} from "react";
-import '../../components-style/LoginPage.css'
+import { withRouter } from "react-router-dom";
+import ReactGA from "react-ga"
 import Header from '../Header/Header.js'
 import LoginBox from "./LoginBox";
-import HamburgerHeader from '../Hamburger-Header/HamburgerHeader.js'
-import Footer from "../Footer/Footer";
-import ReactGA from "react-ga"
-import { withRouter } from "react-router-dom";
+import HamburgerHeader from '../Hamburger-Header/HamburgerHeader.js';
+import '../../components-style/LoginPage.css';
 
 require('dotenv').config();
-
-
-const setLogin = () => {
-    window.open(process.env.REACT_APP_OAUTH_URL, "_self")
-}
-
 
 /**
  *

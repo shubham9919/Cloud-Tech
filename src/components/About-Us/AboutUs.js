@@ -1,13 +1,13 @@
 import React, {useEffect} from 'react'
+import { withRouter } from "react-router-dom";
 import { Helmet } from 'react-helmet'
-import '../../components-style/AboutUs.css';
-import '../../components-style/Grid.css'
-import '../../components-style/normalize.css'
 import HamburgerHeader from '../Hamburger-Header/HamburgerHeader.js'
 import Header from '../Header/Header.js'
 import Footer from '../Footer/Footer.js'
 import ReactGA from "react-ga"
-import { withRouter } from "react-router-dom";
+import '../../components-style/AboutUs.css';
+import '../../components-style/Grid.css'
+import '../../components-style/normalize.css'
 
 
 

@@ -1,6 +1,6 @@
 import React from "react";
-import '../../components-style/HighlightedBlock.css'
 import Paragraphtitle from "./ParagraphTitle";
+import '../../components-style/HighlightedBlock.css'
 
 
 /**

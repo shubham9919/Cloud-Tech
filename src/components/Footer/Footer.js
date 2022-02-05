@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import "../../components-style/Footer.css"
 
 
@@ -52,6 +52,9 @@ function Footer() {
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/shubham-chavan"> About Me</a></li>
                                 <li><a href="/login">Sign Up</a></li>
+                                <li><a href="/privacyPolicy">Privacy Policy</a></li>
+                                <li><a href="/disclaimer">Disclaimer</a></li>
+
                             </ul>
                         </div>
                     </div>

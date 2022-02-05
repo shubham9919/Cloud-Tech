@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import { useHistory } from "react-router-dom";
-
+import { Helmet } from "react-helmet";
+import { Redirect } from "react-router";
 import ContentHeader from "../Article-Page-Components/ContentHeader";
 import Header from "../Header/Header";
 import ArticleParagraph from "../Article-Page-Components/ArticleParagraph";
@@ -10,10 +12,8 @@ import CodeBlock from "../Article-Page-Components/CodeBlock";
 import ArticleHeader from "../Article-Page-Components/ArticleHeader";
 import Footer from "../Footer/Footer";
 import HamburgerHeader from "../Hamburger-Header/HamburgerHeader";
-import { Redirect } from "react-router";
-import axios from "axios";
 import "../../components-style/BlogContent.css"
-import { Helmet } from "react-helmet";
+
 require('dotenv').config();
 
 
@@ -30,7 +30,7 @@ function BlogContent(componentProps) {
     useEffect(async () => {
         if (sessionStorage.getItem('OAuthToken') && Object.keys(sessionStorage.getItem('OAuthToken').length > 0)) {
             let apiRes = await callApi()
-            if (apiRes.data == "user found") {
+            if (apiRes.data === "user found") {
                 dataFetchedupdate(true)
             } else {
                 dataFetchedupdate(false)
@@ -46,7 +46,7 @@ function BlogContent(componentProps) {
     const history = useHistory();
 
 
-    if (checker == "undefined" || checker == undefined) {
+    if (checker === "undefined" || checker === undefined) {
         return (
             <React.Fragment>
                 <ArticleHeader></ArticleHeader>
@@ -75,7 +75,7 @@ function BlogContent(componentProps) {
                 }
             }
         } else {
-            if (isDataFetched == null || isDataFetched == true) {
+            if (isDataFetched === null || isDataFetched === true) {
                 setInterval(() => {
                     sessionStorage.setItem('redirectToLastPage', "true")
                     return <Redirect to="/login"></Redirect>
@@ -87,12 +87,12 @@ function BlogContent(componentProps) {
         }
         return (
             <React.Fragment>
-
                 <Helmet>
                     <meta charSet="utf-8" />
                     <title>{componentInputs.title}</title>
                     <link rel="canonical" href={`http://blindoncloud.com${history.location.pathname}`} />
                     <meta name="description" content={componentInputs.description} />
+                    <meta name="title" content={componentInputs.title}/>
                     <meta name="keywords" content={componentInputs.keyWords} />
                     <meta property="og:locale" content="en_US" />
                     <meta property="og:title" content={componentInputs.title} />

@@ -12,7 +12,7 @@ function HeaderLogo() {
         <React.Fragment>
 
             <div className="Component-HeaderLogo-img">
-                <a href='/'><img src="/boc.jpg"></img></a>
+                <a href='/'><img src="/boc.jpg" alt="siteLogo"></img></a>
             </div>
         </React.Fragment>
     )

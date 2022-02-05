@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react"
 import React from "react"
 import Axios from 'axios'
+import { useState, useEffect } from "react"
+import { withRouter } from "react-router-dom";
 import BlogContent from "../Blog-Content/BlogContent"
 import Loading from "../Loading/Loading"
 import ReactGA from "react-ga"
-import { withRouter } from "react-router-dom";
 
 
 
@@ -17,7 +17,6 @@ import { withRouter } from "react-router-dom";
  */
 function Blog(props) {
 
-    const state = useState()
     const [page, topicPage] = useState(null)
     useEffect(() => {
         ReactGA.initialize(process.env.REACT_APP_GOOOGLE_ANALYTICS_MEASUREMENT_ID)

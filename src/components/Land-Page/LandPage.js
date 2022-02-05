@@ -1,12 +1,11 @@
 import React from 'react'
+import Axios from 'axios'
+import { useEffect, useState } from 'react'
 import Topic from '../Topic/Topic'
+import Header from '../Header/Header'
+import Loading from '../Loading/Loading'
 import '../../components-style/Topic.css'
 import '../../components-style/LandPage.css'
-import Header from '../Header/Header'
-import { useEffect, useState } from 'react'
-import Axios from 'axios'
-import Loading from '../Loading/Loading'
-
 
 
 /**
@@ -15,6 +14,7 @@ import Loading from '../Loading/Loading'
  * @link https://stackoverflow.com/questions/45500682/react-iterate-and-insert-components-based-on-count-of-array
  * @return {*} 
  */
+
 function LandPage(params) {
     const [pageData, updatedData] = useState(null)
     useEffect(() => {
@@ -39,7 +39,7 @@ function LandPage(params) {
                 <Header></Header>
                 <body className='Component-Topic-body'>
                     <div className="Component-Topic-cards">
-                        {newObjects.map(item => <Topic key={item} Topic_Props={item} />)}
+                        {newObjects.map(item => <Topic key={item} Topic_Props={item}/>)}
                     </div>
                 </body>
             </React.Fragment>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Helmet } from 'react-helmet'
-import '../../components-style/HamburgerHeader.css'
 import HeaderLogo from '../Header-Logo/HeaderLogo'
+import '../../components-style/HamburgerHeader.css'
 
 
 /**
@@ -35,6 +35,8 @@ function HamburgerHeader() {
                                 <li><a href="/"> Home </a></li>
                                 <li><a href="/shubham-chavan"> About Me </a></li>
                                 <li><a href="/login"> Sign In </a></li>
+                                <li><a href="/privacyPolicy">Privacy Policy</a></li>
+                                <li><a href="/disclaimer">Disclaimer</a></li>   
                             </ul>
                         </div>
                     </div>
