@@ -18,12 +18,12 @@ function Promotions(promotionParams) {
                     <img src={promotionParams.advProps.AffiliateImage} alt=""></img>
                 </div>
                 <div className="component-Promotions-courseDec">
+                    <div className="component-Promotions-category">
+                        <p>Category : {promotionParams.advProps.AffiliateCategory}</p>
+                    </div>
                     <p>
                         {promotionParams.advProps.AffiliateDesc}
                     </p>
-                    <div className="component-Promotions-category">
-                        <p> <span className="component-Promotions-cc">Category :</span>  {promotionParams.advProps.AffiliateCategory}</p>
-                    </div>
                     <div
                         onMouseOver={() => setHover(true)}
                         onMouseLeave={() => setHover(false)}

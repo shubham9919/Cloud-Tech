@@ -79,26 +79,21 @@
 }
 
 .component-Promotions-courseDec p {
-    font-family:'Times New Roman', Times, serif;
-    line-height: 2rem;
-    font-size: 1.7rem;
-    color: black;
-    font-weight: 600;
-}
-
-
-
-
-.component-Promotions-cc {
-    color: red;
+    /* font-family:'Times New Roman', Times, serif; */
+    line-height: 2.3rem;
     font-size: 1.5rem;
-
+    color: black;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 2rem;
 }
 
 .component-Promotions-category > p {
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: center;
     margin-top: .65rem;
+    text-transform:uppercase;
+    color: blue;
 }
 
 .component-Promotions-checkNow {
@@ -115,9 +110,9 @@
 }
 
 .component-Promotions-category {
-    margin: 1rem 0;
     margin-bottom: 0;
     text-align: left;
+    margin-bottom: 2rem;
 }
 
 .component-Promotions-coursePic> img {
@@ -142,15 +137,21 @@
 }
 
 .component-Promotions-category p {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
-
 
 @media only screen and (max-width: 420px) {
     html {
-        font-size: 45%;
+        font-size: 55%;
     }
     .component-Promotions-course, .component-Promotions-courseDec {
         width: 40rem;
+    }
+    .component-Promotions-category p {
+        font-size: 1.5rem;
+    }
+    .component-Promotions-courseDec p {
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
     }
 }

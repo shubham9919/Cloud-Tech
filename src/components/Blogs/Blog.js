@@ -1,10 +1,10 @@
 import React from "react"
 import Axios from 'axios'
+import ReactGA from "react-ga"
 import { useState, useEffect } from "react"
 import { withRouter } from "react-router-dom";
 import BlogContent from "../Blog-Content/BlogContent"
 import Loading from "../Loading/Loading"
-import ReactGA from "react-ga"
 
 
 

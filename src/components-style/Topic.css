@@ -7,6 +7,10 @@
 }
 
 
+.Topic_Description:hover {
+    color: red;
+}
+
 .Component-Topic-cards {
     display: flex;
     flex-direction: row;
@@ -18,7 +22,7 @@
 
 .Component-Topic-card {
     width: 33rem;
-    height: 28rem;
+    /* height: 28rem; */
     min-height: 26rem;
     object-fit:cover;
     margin: 2.5rem;
@@ -31,8 +35,12 @@
     padding: .2rem;
     max-width:100%;
     max-height:100%;
-    
 }    
+
+.Component-Topic-image-box {
+    height: 20rem;
+    text-align: center;
+}
 
 .Component-Topic-active{
     transition: .1s ease-in-out;
@@ -43,11 +51,9 @@
 
 .Component-Topic-card-desc{
     position: relative;;
-    margin-left: 1rem;
     font-size: 2.3rem;
-    margin-top: 1rem;
+    padding-top: 2rem;
     text-align:left;
-    font-weight: 600;
     text-transform: capitalize;
     line-height: 2rem;
     color: black;
@@ -57,8 +63,22 @@
     padding-bottom: 1rem;
 }
 
-.Component-Topic-card-desc p {
-    font-family:'Times New Roman', Times, serif;
+.Component-Topic-card-desc > p{
+    margin-top: 1rem;
+}
+
+.Component-Topic-card-desc > a {
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: blue;
+    text-transform: uppercase;
+}
+
+.Topic_Description {
+    font-size: 1.4rem;
+    /* margin-bottom: 1rem; */
+    color: blue;
+    text-transform: uppercase;
 }
 
 @media only screen and (max-width: 998px) {
@@ -71,6 +91,7 @@
     html {
         font-size: 45%;
     }
+
     .Component-Topic-card {
         width: 47rem;
         height: auto;
@@ -85,5 +106,13 @@
     .Component-Topic-card-desc p {
         font-size: 2.2rem;
         line-height: 3rem;
+    }
+
+    .Component-Topic-card-desc > a {
+        font-size: 1.8rem;
+    }
+
+    .Topic_Description {
+        font-size: 1.8rem;
     }
 }

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Helmet from "react-helmet";
+import ReactGA from "react-ga"
 import Footer from "../Footer/Footer.js"
 import { useHistory } from "react-router-dom";
 import HamburgerHeader from "../Hamburger-Header/HamburgerHeader.js"
@@ -7,20 +8,26 @@ import Header from "../Header/Header.js"
 import '../../components-style/PrivacyPolicy.css'
 
 function Disclaimer() {
+
+    useEffect(() => {
+        ReactGA.initialize(process.env.REACT_APP_GOOOGLE_ANALYTICS_MEASUREMENT_ID)
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    }, [])
+
     const history = useHistory();
 
     return (
         <React.Fragment>
             <Helmet>
-            <link rel="canonical" href={`http://blindoncloud.com${history.location.pathname}`} />
-                    <meta name="description" content="Disclaimer - blindoncloud.com" />
-                    <meta name="keywords" content="Disclaimer" />
-                    <meta name="title" content="Disclaimer"></meta>
-                    <meta property="og:locale" content="en_US" />
-                    <meta property="og:title" content="Disclaimer" />
-                    <meta property="og:description" content="Disclaimer" />
-                    <meta property="og:url" content={`https://blindoncloud.com${history.location.pathname}`} />
-                    <meta property="og:site_name" content="blindoncloud.com" />
+                <link rel="canonical" href={`http://blindoncloud.com${history.location.pathname}`} />
+                <meta name="description" content="Disclaimer - blindoncloud.com" />
+                <meta name="keywords" content="Disclaimer" />
+                <meta name="title" content="Disclaimer"></meta>
+                <meta property="og:locale" content="en_US" />
+                <meta property="og:title" content="Disclaimer" />
+                <meta property="og:description" content="Disclaimer" />
+                <meta property="og:url" content={`https://blindoncloud.com${history.location.pathname}`} />
+                <meta property="og:site_name" content="blindoncloud.com" />
             </Helmet>
             <HamburgerHeader></HamburgerHeader>
             <Header></Header>

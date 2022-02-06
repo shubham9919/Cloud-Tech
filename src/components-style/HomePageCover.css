@@ -44,6 +44,7 @@ cite {
     color: white;
     font-family: 'Rubik', sans-serif;
     border-radius: 1rem;
+    margin-top: 4rem;
 }
 
 .blogPosts h2 {
@@ -76,3 +77,9 @@ cite {
         margin: 4% 30% 0 30%;
     }
 }
+
+/* @media only screen and (min-width: 900px) and (max-width: 1042px) {
+    .component-homepage-cover-intro-text {
+        position:unset;
+    }
+} */
