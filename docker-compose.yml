@@ -4,3 +4,4 @@ services:
     build: 
       context: .
     image: cloud-tech-image
+    
